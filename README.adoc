@@ -1,5 +1,7 @@
 = CSA DevSecOps WG: Agile Security position paper
 
+image:https://travis-ci.com/riboseinc/csand-devsecops-whitepaper/master.svg[Build Status, link="https://travis-ci.com/riboseinc/csand-devsecops-whitepaper"]
+
 == Introduction
 
 This document describes the rationale, definitions and benefits of DevSecOps and its related practices.
