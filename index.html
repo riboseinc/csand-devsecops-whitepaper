@@ -78,6 +78,10 @@ code, pre, tt, kbd, samp {
 h1, h2, h3, h4, h5, h6, .h2Annex {
   font-family: "Source Sans Pro", sans-serif; }
 
+li {
+  margin-left: 1em;
+  list-style-position: outside; }
+
 dl {
   display: grid;
   grid-template-columns: max-content auto; }
@@ -988,59 +992,59 @@ be requested from the address below.
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_1e6d990f-80a7-42ef-8294-19707464a211">The Cloud Security Alliance ("CSA") is global non-profit
+        <p id="_b4296b3e-0a2a-4b5d-8641-259cd91526cf">The Cloud Security Alliance ("CSA") is global non-profit
 organization with the aim to facilitate and protect user information in the
 cloud and its ecosystem.</p>
-        <p id="_dfd7648e-dc09-4c0e-9b59-29f22d34592c">Attention is drawn to the possibility that some of the elements of this
+        <p id="_ec06de46-eeec-4150-912a-41e854ab0871">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CSA shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CSA list of patent declarations received (see
 www.cloudsecurityalliance.com/patents).</p>
-        <p id="_30ebea51-b6af-4970-b2c9-6c27b1841140">Any trade name used in this document is information given for the convenience
+        <p id="_f8ffbdfe-fd2c-4b3d-bb44-08234ed40f03">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_7cd97614-2540-4ec7-85d8-d70bc53a8e97">This document was prepared by the Cloud Security Alliance <i>DevSecOps</i>
+        <p id="_9b0da9d4-cae4-4c35-88f9-f0052836f044">This document was prepared by the Cloud Security Alliance <i>DevSecOps</i>
 working group.</p>
       </div>
       <br />
       <div class="Section3" id="introduction">
         <h1 class="IntroTitle">Introduction</h1>
-        <div id="_background"><h2>Background</h2><p id="_3e6aeada-5aa4-4a08-ab9f-036882acfa2f">DevOps, the practice of applying developmental practices on infrastructure operations, has been shown to positively impact efficiencies of operation teams today, especially in the cloud environment.</p>
-<p id="_95ab79c6-a250-4380-8df1-1371735d582a">Given its strengthening adoption, it is a logical next step in applying those practices to the arena of security management, as well as considering its impact on security itself.</p></div>
-        <div id="_application_to_security"><h2>Application to security</h2><p id="_83f21fa4-2139-4ffe-a29d-0819592c44e0">DevOps is now broadly practiced but it has been generally separated from security practices. There is currently no standardized term in industry that cater to this aspect.</p>
-<p id="_048e0aa3-fa4a-43f5-93e6-3d743f1bf556">To explain the intersection of security and DevOps, as well as the amalgamation of security, development and operations practices, a number of terms have been proposed by members of community, including "DevOpsSec", "DevSecOps", "SecDevOps".</p>
-<p id="_d9e8d0ed-4efe-4c6b-bba3-4e06329d1894">These terms have been used mostly interchangeably, but the meanings they convey can be vastly different. The definitions of these terms can widely conflict with each other depending on the particular understanding of the reader.</p>
-<p id="_b551c8ca-3b7d-4f51-b77d-a60db9dcf3a4">Moreover, there is no industry recognized definition for security automation, which is a core concept to the application of DevOps practices to security operations, leading to confusion and misinterpretations.</p>
-<p id="_e25eacc3-fa55-41a1-84a0-549741b22a07">It is therefore crucial to clarify and standardize such terms for a global and wider industry audience.</p></div>
-        <div id="_external_pressure_to_organizations"><h2>External pressure to organizations</h2><p id="_4da791ff-426c-432f-a94a-5a95b7203624">Organizations today are faced with a number of security management issues, including:</p>
-<ul id="_b1bc645e-b845-44f9-863a-dfca19da673f">
+        <div id="_background"><h2>Background</h2><p id="_98378af6-1f06-468b-b3c6-9a3cfbc5a108">DevOps, the practice of applying developmental practices on infrastructure operations, has been shown to positively impact efficiencies of operation teams today, especially in the cloud environment.</p>
+<p id="_cf0af805-432f-49b5-9146-d1ddd89f5f30">Given its strengthening adoption, it is a logical next step in applying those practices to the arena of security management, as well as considering its impact on security itself.</p></div>
+        <div id="_application_to_security"><h2>Application to security</h2><p id="_a7845f61-1b98-4fb2-946b-0f7635582896">DevOps is now broadly practiced but it has been generally separated from security practices. There is currently no standardized term in industry that cater to this aspect.</p>
+<p id="_0dee9565-ff69-4b07-8ebc-c63751f2ceca">To explain the intersection of security and DevOps, as well as the amalgamation of security, development and operations practices, a number of terms have been proposed by members of community, including "DevOpsSec", "DevSecOps", "SecDevOps".</p>
+<p id="_dff84bf0-4fa2-40b8-b2cc-3f75fe73b41f">These terms have been used mostly interchangeably, but the meanings they convey can be vastly different. The definitions of these terms can widely conflict with each other depending on the particular understanding of the reader.</p>
+<p id="_49d94000-4448-479f-8fc7-457ad2fe4170">Moreover, there is no industry recognized definition for security automation, which is a core concept to the application of DevOps practices to security operations, leading to confusion and misinterpretations.</p>
+<p id="_9712ba05-b5b0-48bf-9911-9ab9bdf95b52">It is therefore crucial to clarify and standardize such terms for a global and wider industry audience.</p></div>
+        <div id="_external_pressure_to_organizations"><h2>External pressure to organizations</h2><p id="_89bd6a25-3b7a-4411-894f-aa419926e6e5">Organizations today are faced with a number of security management issues, including:</p>
+<ul id="_102fbe7b-61cc-4fd4-b4fd-f8589d953e5d">
   <li>
-    <p id="_110fc6d2-b291-48bf-b0f8-82602bc4c431">spiralling compliance governance costs;</p>
+    <p id="_bf31b9a2-a6c2-42de-bff7-d1c2b4010949">spiralling compliance governance costs;</p>
   </li>
   <li>
-    <p id="_f6c5ec76-cb18-42ef-845a-e1d7fa6fcaae">global shortage of cyber security professionals, which forces organizations to more efficiently utilize staff;</p>
+    <p id="_cf90583b-d424-4f91-8595-e737d7787ff3">global shortage of cyber security professionals, which forces organizations to more efficiently utilize staff;</p>
   </li>
   <li>
-    <p id="_ebab9f2b-b657-4776-9a19-a6603f54a99c">the notable disconnect between strategic security and operational security.</p>
+    <p id="_8f737e7d-8c74-4d93-9f59-4c0bf1b145eb">the notable disconnect between strategic security and operational security.</p>
   </li>
 </ul>
-<p id="_e332e5de-7e14-4f1d-b14b-7950cf7a2f98">All of these factors force an organization to deliver more security "bang for the buck".</p></div>
-        <div id="_purpose"><h2>Purpose</h2><p id="_2b4e2982-ad50-42c9-97b7-85bd372f910a">This whitepaper aims to clarify and standardize an authoritative definition of the intersection between the three aspects of security, development and operations, and use it to generalize the principles of a novel security management approach we call "Agile Security".</p>
-<p id="_270b8311-76ca-4bf2-a90e-b1b2bd252547">Several approaches to Agile Security are suggested to resolve the availability gap of cyber security professionals.</p></div>
+<p id="_ef34c404-1415-48b2-9e6c-6edcafbd7bfa">All of these factors force an organization to deliver more security "bang for the buck".</p></div>
+        <div id="_purpose"><h2>Purpose</h2><p id="_d9dce2cb-fbb8-46e1-8801-11a184e0a038">This whitepaper aims to clarify and standardize an authoritative definition of the intersection between the three aspects of security, development and operations, and use it to generalize the principles of a novel security management approach we call "Agile Security".</p>
+<p id="_a9c14528-372c-42fc-929f-a5f2a8439146">Several approaches to Agile Security are suggested to resolve the availability gap of cyber security professionals.</p></div>
       </div>
       <p class="zzSTDTitle1">Agile Security: the intersection of security, development and operations</p>
       <div id="scope">
         <h1>1.&#xA0; Scope</h1>
-        <p id="_b4a10288-208c-49ab-913e-03a1e2663ef5">This document:</p>
-        <ul id="_089d40fd-bcc5-4e66-90d6-f629949e1cb4">
+        <p id="_106dc350-3323-4252-8895-badcff6c1dca">This document:</p>
+        <ul id="_d30da31e-53be-4b71-a03b-63dbbe76e85a">
   <li>
-    <p id="_4d1bd268-608a-44d7-b3d8-772edf181821">provides rigorous definitions for the terms "DevOpsSec", "DevSecOps" and "SecDevOps";</p>
+    <p id="_542088a7-b32e-41fe-bdd4-ea8ccff0ef99">provides rigorous definitions for the terms "DevOpsSec", "DevSecOps" and "SecDevOps";</p>
   </li>
   <li>
-    <p id="_6dcf72d6-ac72-40e6-9b46-9681aa974f32">describes the benefits of amalgamating security, development and operation practices for integrated management;</p>
+    <p id="_b0e8bbfa-3fcd-4964-9342-74493cca2fd8">describes the benefits of amalgamating security, development and operation practices for integrated management;</p>
   </li>
   <li>
-    <p id="_76da0fc6-0faf-4913-a5a8-2b6e17de009c">describes the "Agile Security" approach that represents a new paradigm in security management.</p>
+    <p id="_1784eff1-b024-403a-8460-7d5fcf7cdbd5">describes the "Agile Security" approach that represents a new paradigm in security management.</p>
   </li>
 </ul>
       </div>
@@ -1056,27 +1060,27 @@ working group.</p>
 </div>
       <div id="devops">
         <h1>4.&#xA0; Essence of DevOps</h1>
-        <div id="_general"><h2>4.1. General</h2><p id="_ec1f28e6-5602-4a70-b365-81329ca6d724">While the term "DevOps" has been widely defined by its practices and toolsets, there are several conflicting definitions on what the term really represents.</p>
-<p id="_2b101be5-87d0-4d1f-b16c-0b75aaa6b582">Some of them are too narrow while some are too broad to be meaningful. For example, the Wikipedia article on DevOps claims it is "a set of practices that emphasize the collaboration and communication of both software developers and information technology (IT) professionals while automating the process of software delivery and infrastructure changes", which is too vague, too broad as well as inaccurate.</p>
-<p id="_15e36bdc-be33-4c37-a30a-fe34541c6383">"DevOps" practices today have minimal, if any, impact on software application development process itself. Its practices and related tools mainly service infrastructure automation, through concepts made apparent by Agile software development practices, such as continuous integration and delivery and programmatic (software-defined) infrastructure.</p></div>
-        <div id="_definition"><h2>4.2. Definition</h2><p id="_fc882bd7-1fd3-42d8-a942-b76567dc4d7c">In this document, we clarify the following definition:</p>
-<dl id="_530c0fd7-840c-4172-be6f-0edf37a9361d"><dt><p>DevOps</p></dt><dd>
-    <p id="_f03e10bb-bb2c-468e-8bf9-20fa9a5ea4d5">The cross-application of software development and methodologies to infrastructure operations, chiefly for automating infrastructure management.</p>
+        <div id="_general"><h2>4.1. General</h2><p id="_2045728c-22b2-45e8-bc63-2c27e58496c2">While the term "DevOps" has been widely defined by its practices and toolsets, there are several conflicting definitions on what the term really represents.</p>
+<p id="_bb32f7f4-5a7f-44d6-8903-cbfb4c0717de">Some of them are too narrow while some are too broad to be meaningful. For example, the Wikipedia article on DevOps claims it is "a set of practices that emphasize the collaboration and communication of both software developers and information technology (IT) professionals while automating the process of software delivery and infrastructure changes", which is too vague, too broad as well as inaccurate.</p>
+<p id="_4adde6a8-fb8c-44b1-90a3-05fb82a647d1">"DevOps" practices today have minimal, if any, impact on software application development process itself. Its practices and related tools mainly service infrastructure automation, through concepts made apparent by Agile software development practices, such as continuous integration and delivery and programmatic (software-defined) infrastructure.</p></div>
+        <div id="_definition"><h2>4.2. Definition</h2><p id="_73e44ff9-3a10-4759-8312-516065c2d85c">In this document, we clarify the following definition:</p>
+<dl id="_6acbf0e1-201e-4141-9cbf-17fd45b63716"><dt><p>DevOps</p></dt><dd>
+    <p id="_ca66ba89-030b-4e8c-9868-80f06edd7cbb">The cross-application of software development and methodologies to infrastructure operations, chiefly for automating infrastructure management.</p>
   </dd></dl></div>
       </div>
       <div id="questions">
         <h1>5.&#xA0; The (right) questions worth answering</h1>
-        <p id="_fc8880c9-b103-4340-b91b-053b477221b0">Given the strong acclaim of DevOps practices, it is worth understanding how similar concepts affect security.</p>
-        <p id="_648b554a-c31d-4e37-b4e0-a80888cef6b2">Here are the important questions we answer below:</p>
-        <ul id="_92354c9e-04ed-4f1a-8e8e-dd2347baf764">
+        <p id="_54c5ed26-8f9a-4a7e-8792-1551d8e295d1">Given the strong acclaim of DevOps practices, it is worth understanding how similar concepts affect security.</p>
+        <p id="_b9819eaf-c845-4a87-b345-d66a252af3d2">Here are the important questions we answer below:</p>
+        <ul id="_9ae71080-67be-44ca-a602-eec512b3015e">
   <li>
-    <p id="_ed7a36be-8a59-4778-866d-7e50d9570be7">What is the impact of DevOps practices on security?</p>
+    <p id="_f3770163-c6e6-479d-b57b-8cb4944e68fc">What is the impact of DevOps practices on security?</p>
   </li>
   <li>
-    <p id="_4eb4e2e2-2639-4659-b371-1bad9686b2ad">How do we provide security through DevOps?</p>
+    <p id="_8660a901-44f8-4a42-b2dd-2afb51ac1554">How do we provide security through DevOps?</p>
   </li>
   <li>
-    <p id="_303ae55c-da26-4c10-94b7-7b62e60770c8">How does an organization implement security through automation?</p>
+    <p id="_92f3768e-395c-4138-bd68-8490120df428">How does an organization implement security through automation?</p>
   </li>
 </ul>
       </div>
@@ -1084,121 +1088,121 @@ working group.</p>
         <h1>6.&#xA0; DevOpsSec: Impact of DevOps practices on security</h1>
         <div id="_general_2"><h2>6.1. General</h2>
 
-  <p id="_66f06acf-9388-467a-9bbd-c7f0fa669ccd">What is the impact of DevOps practices on security? Or more specifically, how do organizations ensure that DevOps does not compromise security? This has been called "DevOpsSec": "DevOps" security. DevOps practices bring strong impact on resulting infrastructure and operations. There are inherent security requirements in DevOps processes.</p>
+  <p id="_a31f9e89-064a-4740-ba88-f21939a51c69">What is the impact of DevOps practices on security? Or more specifically, how do organizations ensure that DevOps does not compromise security? This has been called "DevOpsSec": "DevOps" security. DevOps practices bring strong impact on resulting infrastructure and operations. There are inherent security requirements in DevOps processes.</p>
 </div>
         <div id="_definition_2"><h2>6.2. Definition</h2>
 
-  <dl id="_bf78686a-a69b-41ea-aa29-6b30a7855bcf"><dt><p>DevOpsSec ("DOS")</p></dt><dd>
-    <p id="_ae0c1ae3-6e6d-45a3-a5e5-450484faaa94">The embedding of information security principles to protect processes that utilize DevOps practices.</p>
+  <dl id="_a099ff18-deaa-4f51-a97a-5c84a274956e"><dt><p>DevOpsSec ("DOS")</p></dt><dd>
+    <p id="_4a2d5348-22d2-4f68-995d-868f02c50ad0">The embedding of information security principles to protect processes that utilize DevOps practices.</p>
   </dd></dl>
 </div>
-        <div id="_implications"><h2>6.3. Implications</h2><p id="_9f8f02a7-b769-47dd-8cc4-bc653c4a6bb7">A software-defined infrastructure is highly beneficial (or a wet dream) for the experienced infrastructure engineer, where virtual instances, containers, and virtual network devices are spin up or down through fingertips on the keyboard.</p>
-<p id="_b1227cc1-d113-4588-bbb4-cd69cfaf9994">Yet, as best put by Spiderman, power bring responsibility. It is equally true that the novice engineer armed with some development skill could have his fingertips spin things out of control. Very often, create security vulnerabilities due to lack of consideration of all aspects surrounding the infrastructure. E.g. lax firewall rulesets, default credentials or increased attack surface.</p>
-<p id="_6ddb1221-11d8-488a-82ea-b6fb11ba3dd7">This happens more often than one thinks. As ironic it may be, software development and infrastructure administration are generally separate skill sets that doing one well does not necessary translate to the other. Anecdotes of novice developers attempting to use "DevOps" in running infrastructure causing moments of reflection abound.</p>
-<p id="_8dbe2208-c17d-4d71-bcf8-b724780d3504">In this document, we will describe the crucial security practices for protecting DevOps processes and preventing DevOps from being a threat.</p></div>
+        <div id="_implications"><h2>6.3. Implications</h2><p id="_ff41f83e-006e-47e4-bfb9-414990618e7a">A software-defined infrastructure is highly beneficial (or a wet dream) for the experienced infrastructure engineer, where virtual instances, containers, and virtual network devices are spin up or down through fingertips on the keyboard.</p>
+<p id="_2e9238d5-a428-4cf4-a61e-fc51012687e1">Yet, as best put by Spiderman, power bring responsibility. It is equally true that the novice engineer armed with some development skill could have his fingertips spin things out of control. Very often, create security vulnerabilities due to lack of consideration of all aspects surrounding the infrastructure. E.g. lax firewall rulesets, default credentials or increased attack surface.</p>
+<p id="_0f910719-0239-46ff-93c8-8dd4a1180a26">This happens more often than one thinks. As ironic it may be, software development and infrastructure administration are generally separate skill sets that doing one well does not necessary translate to the other. Anecdotes of novice developers attempting to use "DevOps" in running infrastructure causing moments of reflection abound.</p>
+<p id="_0d6331e2-ea08-4573-a26e-b87ff0bf2369">In this document, we will describe the crucial security practices for protecting DevOps processes and preventing DevOps from being a threat.</p></div>
       </div>
       <div id="dso">
         <h1>7.&#xA0; DevSecOps: providing security through DevOps</h1>
         <div id="_general_3"><h2>7.1. General</h2>
 
-  <p id="_3e185e22-0472-42b5-9799-85dbdd215f47">How do we provide security through DevOps? Despite this question containing similar keywords with the previous one, it is an even more important question. Is it possible to apply DevOps concepts, where development practices can and have enhanced operations efficiency, onto security? Some have called this "DevSecOps" for "Security DevOps".</p>
+  <p id="_6a3cfe5f-7aeb-4431-95dd-77e39ce47a4d">How do we provide security through DevOps? Despite this question containing similar keywords with the previous one, it is an even more important question. Is it possible to apply DevOps concepts, where development practices can and have enhanced operations efficiency, onto security? Some have called this "DevSecOps" for "Security DevOps".</p>
 </div>
         <div id="_definition_3"><h2>7.2. Definition</h2>
 
-  <dl id="_6c878cc3-5c20-4941-883e-68bb92b1b680"><dt><p>DevSecOps ("DSO")</p></dt><dd>
-    <p id="_38ce11cf-8ce0-4b13-9e5a-dfecfa0b50e4">The automation of information security processes through DevOps practices.</p>
+  <dl id="_c1e83094-8e4c-42bd-aaf5-b638c39d883c"><dt><p>DevSecOps ("DSO")</p></dt><dd>
+    <p id="_4fd2f937-1a3d-41db-9622-f652eeeb610f">The automation of information security processes through DevOps practices.</p>
   </dd></dl>
 </div>
-        <div id="_implications_2"><h2>7.3. Implications</h2><p id="_ee7b2437-0fe6-441c-851f-45b8fe25992c">On a tactical level, DSO represents the "integration and automation of security controls through DevOps using automated toolchains". The CSO sets the policies following business requirements and risk management, which could be applied programmatically.</p>
-<p id="_daee4891-4cd1-4d52-a1ef-f9e1613aba67">Examples of DSO practices:</p>
-<ul id="_9611e405-e710-4c95-a086-e206de259aba">
+        <div id="_implications_2"><h2>7.3. Implications</h2><p id="_197dc3bc-0223-45d3-a1de-97880353250f">On a tactical level, DSO represents the "integration and automation of security controls through DevOps using automated toolchains". The CSO sets the policies following business requirements and risk management, which could be applied programmatically.</p>
+<p id="_b482e103-a398-4ab4-946b-c1bddc2a095b">Examples of DSO practices:</p>
+<ul id="_03d74ee1-046a-49e0-b2a2-e75636a21e63">
   <li>
-    <p id="_f05cc75f-9e9b-45e6-8391-dd9589d60662">Infrastructure</p>
-    <ul id="_bf33d687-59e5-4b36-90c5-a533e83fc5db">
+    <p id="_ed9ede58-c740-44dd-9f22-c02c2b499881">Infrastructure</p>
+    <ul id="_d568b551-38f1-4368-8435-a0d155ad9a96">
   <li>
-    <p id="_13b945db-1b97-4a46-83a4-28cdd55525d5">Immutable infrastructures</p>
+    <p id="_711c18ad-0f3e-4828-8227-7d5166c25d92">Immutable infrastructures</p>
   </li>
 </ul>
   </li>
   <li>
-    <p id="_628c2cd1-31e0-411e-85ab-275ee54e9620">QA</p>
-    <ul id="_65075bda-439b-4652-83de-544c6de4f221">
+    <p id="_13c2256b-7aee-4d6c-8bff-2218dcff7a30">QA</p>
+    <ul id="_df516165-7a9b-4590-85db-43744e3769ac">
   <li>
-    <p id="_c621ff11-faa4-4860-9872-f1ebc9cba039">Implementation of data masking of data used in development for testing</p>
+    <p id="_997cb9de-45ca-4c0b-bce8-a33d296c5fc3">Implementation of data masking of data used in development for testing</p>
   </li>
 </ul>
   </li>
   <li>
-    <p id="_5d543034-afae-400a-8094-3a4a0c9fea9f">Containers</p>
-    <ul id="_6f7ae98b-1a9a-4c26-a474-f8fbe6f8cec8">
+    <p id="_8fb8c329-6f5d-48e2-9a1b-1e13159992ef">Containers</p>
+    <ul id="_61a29885-9a09-4c7a-81ca-687a1b08288b">
   <li>
-    <p id="_df582db6-2662-4698-8c4c-0c7922ab3a45">Vulnerability scanning during building of container images</p>
+    <p id="_1ec79d6b-8673-4b29-8e83-f379cc7ad728">Vulnerability scanning during building of container images</p>
   </li>
   <li>
-    <p id="_165dc248-91ed-4630-8de1-5c3d2b39fe3e">Patch management of applications and libraries inside containers</p>
+    <p id="_dbe79744-5abf-4bd4-a3cc-ae882d07a3c8">Patch management of applications and libraries inside containers</p>
   </li>
   <li>
-    <p id="_6b22bcad-6d21-4c0c-ac1d-8c961fa8876e">Hardening / secure configuration, self-healing</p>
+    <p id="_a7f5fbc1-46e6-458e-9136-2403071ab702">Hardening / secure configuration, self-healing</p>
   </li>
   <li>
-    <p id="_6f1add5a-a34e-46d6-a882-d36802491aed">PKI / Digital signatures</p>
+    <p id="_d3735c41-e7f6-4fc2-8cff-46563e45993c">PKI / Digital signatures</p>
   </li>
   <li>
-    <p id="_8c2ffdda-411b-4c57-8e39-518e95373cd5">Anti-virus scan during building of container images</p>
+    <p id="_bfc8f191-4cf8-4445-8485-51c9b6ab0043">Anti-virus scan during building of container images</p>
   </li>
   <li>
-    <p id="_c917c91b-c0a0-4603-a83c-d7971f605e9f">Certify container images</p>
+    <p id="_c712f052-5c53-4e0f-8721-f02e30861528">Certify container images</p>
   </li>
   <li>
-    <p id="_8d9ce9ec-41bd-4c7b-a0a7-6328ddd6507f">Scan for embedded keys, hardcoded credentials, push for role based access technology</p>
+    <p id="_341f40d9-541d-45a5-9490-56bda12d83a9">Scan for embedded keys, hardcoded credentials, push for role based access technology</p>
   </li>
   <li>
-    <p id="_5fd6054d-e48e-4310-836f-9b02219a21d7">Cryptographically sign and certify container images</p>
-  </li>
-</ul>
-  </li>
-  <li>
-    <p id="_e9ffe15f-351d-4e76-8ddb-7a7c5633256c">Operating systems / VM images</p>
-    <ul id="_92a8a022-21de-47c1-9d92-d08f968b68ad">
-  <li>
-    <p id="_28dc819f-9afb-403a-a716-28424be076bf">Vulnerability scanning during building of VM images</p>
-  </li>
-  <li>
-    <p id="_391b48cc-4c4e-4eb5-967a-98a668cbec1a">Patch management of applications and libraries of the operating system</p>
-  </li>
-  <li>
-    <p id="_f4455a36-10df-4a9f-aa89-edb14d1d1078">Hardening / secure configuration, self-healing</p>
-  </li>
-  <li>
-    <p id="_2b02525d-b60a-4a83-8f57-d256168944fb">Anti-virus scan during building of VM images</p>
-  </li>
-  <li>
-    <p id="_320f27e3-95ae-40cd-b5b0-c40966a4bdc0">Cryptographically sign and certify VM images</p>
+    <p id="_a5904904-7ae3-4638-96fe-807f7275a5de">Cryptographically sign and certify container images</p>
   </li>
 </ul>
   </li>
   <li>
-    <p id="_1c12c7f1-92c5-4934-89e6-b5a6d617b0c9">Code / applications</p>
-    <ul id="_85c22361-d98d-4996-b8fe-06dd2f11d955">
+    <p id="_731c01e6-04ad-4f45-b077-ef08e5dbcb63">Operating systems / VM images</p>
+    <ul id="_a9dd5ac4-18d5-4a00-8d8a-8a7326f2038e">
   <li>
-    <p id="_1807d2ff-2a8d-4033-889e-5b493540a8a5">Static code analysis after code commits, builds or releases</p>
+    <p id="_36f8438f-ab6b-4241-9854-48e8d60f7bef">Vulnerability scanning during building of VM images</p>
   </li>
   <li>
-    <p id="_e2c38dde-93d0-4977-ab6e-2f0adac368ef">Scanning for embedded keys, hardcoded credentials, push for role based access</p>
+    <p id="_a7591237-03e5-41b1-9a38-3f1b0a578232">Patch management of applications and libraries of the operating system</p>
+  </li>
+  <li>
+    <p id="_c07b6ce8-d60b-41de-8666-f7cf69746cfc">Hardening / secure configuration, self-healing</p>
+  </li>
+  <li>
+    <p id="_dc76fd0b-7e21-4efe-942b-15ec52a46e53">Anti-virus scan during building of VM images</p>
+  </li>
+  <li>
+    <p id="_0bec1ac4-18a5-40a8-9c36-2bc3fb19ebb6">Cryptographically sign and certify VM images</p>
   </li>
 </ul>
   </li>
   <li>
-    <p id="_eb905d5f-4247-4947-9e34-05718798f9ff">Release management</p>
-    <ul id="_532a6b7f-2a20-474b-9fcc-8a6a422cdaeb">
+    <p id="_0a2cf29f-3583-4c5b-aee4-a91ebf6aca8e">Code / applications</p>
+    <ul id="_235697fd-da62-48b0-9bf1-627feb1b3906">
   <li>
-    <p id="_f5c8ded5-e792-4a6f-aefe-65b3db8df984">Create new public/private keys for each release</p>
+    <p id="_52127902-d04e-4e4b-aebc-e93d28005d56">Static code analysis after code commits, builds or releases</p>
   </li>
   <li>
-    <p id="_db73133f-f76a-4c48-a869-88e8cf28879a">Only accept signed/certified container and OS images</p>
+    <p id="_6b91a031-3c11-449d-9ea5-69c41ed825ce">Scanning for embedded keys, hardcoded credentials, push for role based access</p>
+  </li>
+</ul>
   </li>
   <li>
-    <p id="_6ea0c325-70d9-4dac-b42a-786c59c25b3d">Revocation of older SSL certificates / private keys / PKI after each release</p>
+    <p id="_19516609-9b4e-4dd4-8880-0f9c5001d997">Release management</p>
+    <ul id="_93866d0e-0196-4376-ae60-db63ac4ed4e9">
+  <li>
+    <p id="_d7c18054-85e4-4946-8706-d529017f239b">Create new public/private keys for each release</p>
+  </li>
+  <li>
+    <p id="_19a50d2f-11f9-4532-8509-b59c0e33a8d8">Only accept signed/certified container and OS images</p>
+  </li>
+  <li>
+    <p id="_638e8d26-479f-4747-8b45-40f7e68cdec1">Revocation of older SSL certificates / private keys / PKI after each release</p>
   </li>
 </ul>
   </li>
@@ -1208,56 +1212,56 @@ working group.</p>
         <h1>8.&#xA0; DevSec: Automating security practices</h1>
         <div id="_general_4"><h2>8.1. General</h2>
 
-  <p id="_551b7bc8-4f19-4688-8201-455bc3c6ae95">How do organizations implement security using automation? This is a generalized question from the previous one about security automation, no longer limited to DevOps. DevOps practices generally only helps with infrastructure automation. What should an organization do to fully utilize automation in achievement of security?</p>
+  <p id="_d8f0981c-add6-429b-8038-0f86fddd03bd">How do organizations implement security using automation? This is a generalized question from the previous one about security automation, no longer limited to DevOps. DevOps practices generally only helps with infrastructure automation. What should an organization do to fully utilize automation in achievement of security?</p>
 </div>
         <div id="_definition_4"><h2>8.2. Definition</h2>
 
-  <dl id="_3076aa2b-e358-43b5-9724-b46d165fd4e0"><dt><p>DevSec, security automation</p></dt><dd>
-    <p id="_59e3016b-32fa-41da-b738-15ae1e99f521">The use of automation in place of manual processes for the achievement of information security management.</p>
+  <dl id="_4ce14118-562e-4d70-8080-44af61a60f71"><dt><p>DevSec, security automation</p></dt><dd>
+    <p id="_9f0cbf19-e789-42b5-a812-31f404ac084c">The use of automation in place of manual processes for the achievement of information security management.</p>
   </dd></dl>
 </div>
-        <div id="_implications_3"><h2>8.3. Implications</h2><p id="_fc57e5b9-73bf-4181-9158-0d3a064c1c98">"Security as Code" is not equivalent to security automation because it does not require the "programmatic" ability.</p>
-<table id="_62417251-297f-462c-800e-18430b829a5c" class="example" cellspacing="0" cellpadding="0" style="border-collapse:collapse"><tr><td valign="top" class="example_label" style="width:82.8pt;padding:0pt;margin-left:0pt">EXAMPLE</td><td valign="top" class="example">
-  <p id="_50ff2c36-a11c-4adc-b6a3-1ab1795388dc" class="example">A scripted application of the DOD Security Technical Implementation Guides (STIG) may still have to be run manually during the installation of a server.</p>
+        <div id="_implications_3"><h2>8.3. Implications</h2><p id="_527a0d17-cb4b-46c2-b337-a16696372b16">"Security as Code" is not equivalent to security automation because it does not require the "programmatic" ability.</p>
+<table id="_be46f4b6-45af-4c55-b3fc-53e3ff7731f0" class="example" cellspacing="0" cellpadding="0" style="border-collapse:collapse"><tr><td valign="top" class="example_label" style="width:82.8pt;padding:0pt;margin-left:0pt">EXAMPLE</td><td valign="top" class="example">
+  <p id="_81225adc-117e-41f3-a764-04bdcf3d59f4" class="example">A scripted application of the DOD Security Technical Implementation Guides (STIG) may still have to be run manually during the installation of a server.</p>
 </td></tr></table>
-<p id="_e97ae62c-1064-4efc-a598-cdd09cf29f92">Examples of security automation:</p>
-<ul id="_a7f688be-f349-446e-a489-a2efb5f88ac2">
+<p id="_0c6528ca-39c1-40fa-84cf-06beafd2b53d">Examples of security automation:</p>
+<ul id="_1b56f95c-7891-48c0-abbe-d6d8aba5b07c">
   <li>
-    <p id="_05812c9b-9739-4277-b3e1-9f520a8e0849">Business Continuity</p>
-    <ul id="_a7aa96c9-bc78-43d1-8b9d-fff6c24aad6a">
+    <p id="_f11e9883-71be-4900-b5a2-64291b791082">Business Continuity</p>
+    <ul id="_7b568202-e185-446c-8ff9-b5283e54a709">
   <li>
-    <p id="_448dfbc8-4fcf-4fc1-b068-91f4742c86e6">Automatic business continuity plan testing through Infrastructure as Code (IaC)</p>
+    <p id="_7523a162-911c-431c-88d0-560a4a636a15">Automatic business continuity plan testing through Infrastructure as Code (IaC)</p>
   </li>
   <li>
-    <p id="_6c72d2c4-1da9-4801-87cf-ecd9615d8676">Continuous backup and restore testing with data masking</p>
-  </li>
-</ul>
-  </li>
-  <li>
-    <p id="_c7c66014-2323-40d3-a237-698ce6526434">SSL Certificates and Public Key Infrastructure</p>
-    <ul id="_e51c751e-f644-4eab-b710-3c0758843486">
-  <li>
-    <p id="_25e92381-3e8b-49ef-a4a0-200d636397a2">Monitoring and auto renewal of SSL certificates</p>
-  </li>
-  <li>
-    <p id="_f16cbf36-2af9-4043-bfe9-24b3dedb6ac2">Testing of expiry dates of SSL certificates</p>
-  </li>
-  <li>
-    <p id="_0825f69d-603e-4fc0-9162-64889c7c390e">Private and public key rotation</p>
+    <p id="_5a244a04-590e-49cc-8306-0c113c34437f">Continuous backup and restore testing with data masking</p>
   </li>
 </ul>
   </li>
   <li>
-    <p id="_a110c902-faf3-4671-b6d4-aae2f10c68cf">Identity and Access management</p>
+    <p id="_99c48138-cd01-4aef-87b1-f0b3c86b5894">SSL Certificates and Public Key Infrastructure</p>
+    <ul id="_e6922ab3-35c9-4868-91e2-07ad49fa60cd">
+  <li>
+    <p id="_f7273882-e1fb-42e1-a76a-e974025422d4">Monitoring and auto renewal of SSL certificates</p>
   </li>
   <li>
-    <p id="_80f8092a-a6e1-453e-ba61-7cb23baa9e1f">Infrastructure</p>
-    <ul id="_a40d602e-132c-4c26-b690-ee7a9e446b0f">
-  <li>
-    <p id="_25a475b4-21d8-4607-9b82-de9290411163">Vulnerability scanning of servers, VMs, containers, appliances during runtime</p>
+    <p id="_fb1f042d-befc-4a55-b01c-0f0bf517025e">Testing of expiry dates of SSL certificates</p>
   </li>
   <li>
-    <p id="_6b3a5b85-e5ab-4cbb-ba59-039f43219505">Anti-virus scan during runtime</p>
+    <p id="_4eb8351a-a7cd-4b7c-bf62-1a433b438cae">Private and public key rotation</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_f891f4e5-1803-494e-aeee-05eb511cdbf9">Identity and Access management</p>
+  </li>
+  <li>
+    <p id="_e223b7eb-a5d0-43fd-b325-a68ed54d90c8">Infrastructure</p>
+    <ul id="_f67da1fa-0bc9-46aa-ad66-fe0b8801f5c0">
+  <li>
+    <p id="_f593170c-e9f1-4401-8b58-d386f487126d">Vulnerability scanning of servers, VMs, containers, appliances during runtime</p>
+  </li>
+  <li>
+    <p id="_ef13b2f0-648b-4ef3-8380-a7b25ee86dcf">Anti-virus scan during runtime</p>
   </li>
 </ul>
   </li>
@@ -1265,86 +1269,86 @@ working group.</p>
       </div>
       <div id="agile-sec">
         <h1>9.&#xA0; Agile Security: the new paradigm</h1>
-        <p id="_c99bcf5f-132d-4c4c-a330-ece062230643">Problem: CSO&#x2019;s do not have sufficient number of security staff.</p>
-        <p id="_f8361541-a229-46dd-a36b-73b99ae2b707">Agile Security is a new paradigm for information security management, that emphasizes embodiment of security across organizational roles, reactive to external and internal threats in an agile and dynamic way.<div id="_a5a95283-43de-421c-829d-b7a2f69fc1dc" class="Note"><p><span class="note_label">NOTE</span>&#xA0; Agile Security compares to Agile Software Development, similar to how the traditional ISMS approach compares to the Waterfall mindset.</p></div></p>
-        <p id="_cb4f464b-df36-43df-bdc3-1503bc94b17e">Agile Security is about dynamic information exchange within the organization. Like the immune system of the human body, information is immediately propagated to adjacent, potentially vulnerable functions given detection of a threat. A traditional ISMS approach will require that threat information to be reported back to the higher functions before any response can be made. With Agile Security, the business functions themselves are integrated security functions and can provide an immediate response to block potential impact. A centralized response is important, but should not prohibit an immediate tactical approach.</p>
-        <p id="_7b5dfd80-b468-49ce-9eae-40164101e091">The ISMS approach is about adopting best practices. However, often best practices that work in larger organizations do not work with smaller ones, and create an unnecessary burden for the smaller organizations, which takes away precious time and effort from daily work and hence negatively affects their security stances.</p>
-        <p id="_f40d774a-02bd-4039-bc5c-dd114a0fb6e2">Agile Security solves the security skill shortage paradox by promoting the idea of "hybrid-domain-security-experts".</p>
-        <ul id="_40c5b717-c67c-4459-b84c-70bd6a5d80f4">
+        <p id="_c456866c-69c5-4d90-a13a-6eeb085807ac">Problem: CSO&#x2019;s do not have sufficient number of security staff.</p>
+        <p id="_f3fc8959-7564-4acb-8a23-20009de8ef52">Agile Security is a new paradigm for information security management, that emphasizes embodiment of security across organizational roles, reactive to external and internal threats in an agile and dynamic way.<div id="_586b251d-431e-466e-bc14-3f3b4511978f" class="Note"><p><span class="note_label">NOTE</span>&#xA0; Agile Security compares to Agile Software Development, similar to how the traditional ISMS approach compares to the Waterfall mindset.</p></div></p>
+        <p id="_1a47ac92-ada9-417b-9558-bae8d310488f">Agile Security is about dynamic information exchange within the organization. Like the immune system of the human body, information is immediately propagated to adjacent, potentially vulnerable functions given detection of a threat. A traditional ISMS approach will require that threat information to be reported back to the higher functions before any response can be made. With Agile Security, the business functions themselves are integrated security functions and can provide an immediate response to block potential impact. A centralized response is important, but should not prohibit an immediate tactical approach.</p>
+        <p id="_6234f31a-9788-4138-a2cf-67adc7b69020">The ISMS approach is about adopting best practices. However, often best practices that work in larger organizations do not work with smaller ones, and create an unnecessary burden for the smaller organizations, which takes away precious time and effort from daily work and hence negatively affects their security stances.</p>
+        <p id="_0c50b670-b3dd-4448-9856-db33b734961f">Agile Security solves the security skill shortage paradox by promoting the idea of "hybrid-domain-security-experts".</p>
+        <ul id="_d0cf76f8-d1c7-4ffd-902b-6c92ffe65e56">
   <li>
-    <p id="_33b118d7-1aa2-4f21-aa61-87e3a2a7f4c0">Risks are delegated</p>
+    <p id="_f75b5203-a2b3-4f58-826b-fc7c287a552b">Risks are delegated</p>
   </li>
   <li>
-    <p id="_15b48c9d-9327-4132-9266-9c48ac91e2ed">Security responsibilities are delegated</p>
+    <p id="_737ef2b0-d450-465e-9f68-bb2f07dd8443">Security responsibilities are delegated</p>
   </li>
 </ul>
-        <p id="_a8dc7ffe-c978-453f-a282-a72abfc36ac1">A "commitment" of top leadership (as in ISMS) is not enough. Top leadership must understand the nature of security and is committed to integrating security into each and every aspect of the organization. Top leadership must fully understand the risks and threats the organization faces (its risk profile) with regards to security, and set clear bounds and requirements for personnel to adhere to.</p>
-        <p id="_7e5b9e1d-80b4-4ca4-bd8f-a3e47a274494">Humans, it is often said, are the weakest link in security. Phishing, social engineering are all techniques to trick an unsuspecting individual to voluntarily compromise security of an organization. Without full participation (not just "awareness") of all involved people, security cannot be achieved.</p>
+        <p id="_eb2a694f-dd27-4956-8ca1-4f4d1f931ec3">A "commitment" of top leadership (as in ISMS) is not enough. Top leadership must understand the nature of security and is committed to integrating security into each and every aspect of the organization. Top leadership must fully understand the risks and threats the organization faces (its risk profile) with regards to security, and set clear bounds and requirements for personnel to adhere to.</p>
+        <p id="_3ac4857d-6d2b-49e1-aaf2-9ed7c4080afa">Humans, it is often said, are the weakest link in security. Phishing, social engineering are all techniques to trick an unsuspecting individual to voluntarily compromise security of an organization. Without full participation (not just "awareness") of all involved people, security cannot be achieved.</p>
       </div>
       <div id="agile-pillars">
         <h1>10.&#xA0; Six pillars of Agile Security</h1>
         <div id="_collectively_responsible"><h2>10.1. Collectively responsible</h2>
 
-  <p id="_6f7a4ef8-3df9-4bba-bda3-1c53d6d40da9">Everyone is responsible towards the security stance of the organization. The CSO plays a leadership and shepherding role for information security within an organization, but each person has their own security responsibility, and they must be aware of their own contribution (and potential problems) towards the organization&#x2019;s security stance. Edge users are not just "security-aware", but are the first line of defence.</p>
+  <p id="_70c7a1f8-ac81-4da0-9a40-88255085f1f6">Everyone is responsible towards the security stance of the organization. The CSO plays a leadership and shepherding role for information security within an organization, but each person has their own security responsibility, and they must be aware of their own contribution (and potential problems) towards the organization&#x2019;s security stance. Edge users are not just "security-aware", but are the first line of defence.</p>
 </div>
         <div id="_collaborate"><h2>10.2. Collaborate</h2>
 
-  <p id="_b8644a0f-afdb-46bd-8f27-2fdc5e4fd7e1">Security can only be achieved through collaboration, not confrontation. A security aware and collaborative culture is necessary for the foot soldiers to report potential anomalies. The human factor is often the weakest link and remember that most security incidents are caused by simple human error.</p>
+  <p id="_534682cd-a863-49c7-89c7-f42d6238b7be">Security can only be achieved through collaboration, not confrontation. A security aware and collaborative culture is necessary for the foot soldiers to report potential anomalies. The human factor is often the weakest link and remember that most security incidents are caused by simple human error.</p>
 </div>
-        <div id="_pragmatic"><h2>10.3. Pragmatic</h2><p id="_e44606e9-44f7-4aa2-9812-498fc657b972">Security should provide value, not hindrance. For every security initiative or adopted security control, a cost-benefit should be considered to allow transparency on the value of security. Without this pragmatic approach, it is too easy for persons unaware of the benefits of security to dismiss security practices as mere overhead or unnecessary. This provides the necessary business case to convince stakeholders for security and therefore confidence to execute plans faithfully.</p>
-<p id="_375b1177-0174-4e9f-a1d5-c072ff5c7d34">Traditional ISMS can create overhead, need to balance tailoring to an organization and adoption of best practices. Documentation requirements should be based on clearly thought out value brought to the organization, not a hard requirement.</p></div>
+        <div id="_pragmatic"><h2>10.3. Pragmatic</h2><p id="_a3ee0327-2764-4a40-9bac-f974224a423f">Security should provide value, not hindrance. For every security initiative or adopted security control, a cost-benefit should be considered to allow transparency on the value of security. Without this pragmatic approach, it is too easy for persons unaware of the benefits of security to dismiss security practices as mere overhead or unnecessary. This provides the necessary business case to convince stakeholders for security and therefore confidence to execute plans faithfully.</p>
+<p id="_1a31576d-a1e5-4d97-bb29-97fc7d60d4c3">Traditional ISMS can create overhead, need to balance tailoring to an organization and adoption of best practices. Documentation requirements should be based on clearly thought out value brought to the organization, not a hard requirement.</p></div>
         <div id="_integrate"><h2>10.4. Integrate</h2>
 
-  <p id="_f5ade29f-1a6a-4ee8-bc91-3dcf57df2fb0">Security must be integrated in every aspect of business. Dedicated security personnel rarely have in-depth domain expertise as your business domain experts, and they are the wrong way of solving the problem no matter how many are hired. The truth is, no one else will know your domain, as well as its risks, as well as yourself. A team of dedicated security experts will most likely be oblivious of your domain-specific security issues. Domain knowledge and security knowledge must be fused and co-exist in every organizational process for effective security management.</p>
+  <p id="_1118d764-d32f-404b-8ba3-896515c3ca9e">Security must be integrated in every aspect of business. Dedicated security personnel rarely have in-depth domain expertise as your business domain experts, and they are the wrong way of solving the problem no matter how many are hired. The truth is, no one else will know your domain, as well as its risks, as well as yourself. A team of dedicated security experts will most likely be oblivious of your domain-specific security issues. Domain knowledge and security knowledge must be fused and co-exist in every organizational process for effective security management.</p>
 </div>
         <div id="_automate"><h2>10.5. Automate</h2>
 
-  <p id="_175afe2a-5111-42da-8f13-84537c72e3c8">Automated security practices are the core of optimizing process efficiency. Processes that can be automated should be automated, and those that can&#x2019;t should be transformed. Automation also creates its own set of problems but automated approaches to those problems are often possible. There is a saying in software development: if you do the same thing thrice, it&#x2019;s time to program it, and this applies squarely with Agile Security.</p>
+  <p id="_84880fea-ad87-4fa0-9550-332a6938d613">Automated security practices are the core of optimizing process efficiency. Processes that can be automated should be automated, and those that can&#x2019;t should be transformed. Automation also creates its own set of problems but automated approaches to those problems are often possible. There is a saying in software development: if you do the same thing thrice, it&#x2019;s time to program it, and this applies squarely with Agile Security.</p>
 </div>
         <div id="_measure"><h2>10.6. Measure</h2>
 
-  <p id="_99913011-553e-43bb-8e4f-9a129ac6db6a">Performance that cannot be measured cannot be improved. Without measurements, there is no understandable evidence whether an information security management is effective. Agile Security is about achieving results, and even as vague as they might be, the results must be measurable for transparency and improvement.</p>
+  <p id="_9d7582dc-9142-49cb-a52a-31b690042341">Performance that cannot be measured cannot be improved. Without measurements, there is no understandable evidence whether an information security management is effective. Agile Security is about achieving results, and even as vague as they might be, the results must be measurable for transparency and improvement.</p>
 </div>
       </div>
       <div id="_benefits_of_agile_security">
         <h1>11.&#xA0; Benefits of Agile Security</h1>
-        <ul id="_9b00eb87-4085-4299-8bc9-cc2fc3953d55">
+        <ul id="_8cc2f93e-8824-49fc-b920-1f92950cf41a">
   <li>
-    <p id="_82565861-9d62-44ca-8d22-cc6d2d3ea032">Resilient: Security no longer relies on a single function, e.g. a single security department. Integration of security practices throughout the organization. Requires deeper involvement of when compared to ISMS processes.</p>
+    <p id="_21aa4fda-3a53-4a83-9658-eebfa8d2c00b">Resilient: Security no longer relies on a single function, e.g. a single security department. Integration of security practices throughout the organization. Requires deeper involvement of when compared to ISMS processes.</p>
   </li>
   <li>
-    <p id="_8708a35d-79de-4aac-a11b-3e126e93f79d">Holistic: Focused on business needs and responding to the actual risk context faced by the organization when compared to traditional information security management, from business goals to operational processes to humans, who often turn out to be the weakest link.</p>
+    <p id="_a3fd4e58-d63c-4b38-b656-151c209b3c28">Holistic: Focused on business needs and responding to the actual risk context faced by the organization when compared to traditional information security management, from business goals to operational processes to humans, who often turn out to be the weakest link.</p>
   </li>
   <li>
-    <p id="_bed97eba-32c1-4fe7-a375-4155009f4f62">Dynamic: The protection of business goals is performed through integrating security with business processes, often down to the tactical levels. This allowing the organization to react faster and more effectively to threats and incidents.</p>
+    <p id="_cc235a39-1433-4763-91ab-e1a277d155ee">Dynamic: The protection of business goals is performed through integrating security with business processes, often down to the tactical levels. This allowing the organization to react faster and more effectively to threats and incidents.</p>
   </li>
   <li>
-    <p id="_065fd64f-2759-44a2-b3d4-e6a089f300ef">Tailored: Prioritized approach to provision stronger protection to core or more vulnerable processes over those less exploitable. The traditional ISMS approach often applies the same set of controls across all processes, leading to inefficient resource allocation.</p>
+    <p id="_7d319c7f-3927-4410-9e49-a39cc3c520d7">Tailored: Prioritized approach to provision stronger protection to core or more vulnerable processes over those less exploitable. The traditional ISMS approach often applies the same set of controls across all processes, leading to inefficient resource allocation.</p>
   </li>
   <li>
-    <p id="_e18499ef-0c45-4228-a0e7-0224e6c4ffa8">Human-centric: Security is integrated and internalized as an aspect of everyone&#x2019;s work, and requires mind-share within every employee. It is not an external responsibility enforced or required by a separate, dedicated, security function.</p>
+    <p id="_87b381bf-dc76-4bca-8e4f-fef46247c601">Human-centric: Security is integrated and internalized as an aspect of everyone&#x2019;s work, and requires mind-share within every employee. It is not an external responsibility enforced or required by a separate, dedicated, security function.</p>
   </li>
   <li>
-    <p id="_5e6edeb8-fa47-4ede-8096-3c37d6322088">Maturity of an Agile Security approach can lead to achievement of a formal ISMS given the need.</p>
+    <p id="_cc9edf4d-079e-414f-9695-12c27420e222">Maturity of an Agile Security approach can lead to achievement of a formal ISMS given the need.</p>
   </li>
 </ul>
       </div>
       <div id="conclusion">
         <h1>12.&#xA0; Conclusion</h1>
-        <p id="_2ebd554c-9506-4cc2-adc8-0ff39e3ed6ce">Agile Security provides a set of wide-implicating and easily understandable principles that affect an organization&#x2019;s cybersecurity posture, especially suitable for today&#x2019;s fast-paced and challenging cybersecurity landscape.</p>
+        <p id="_1fd4a062-5094-44ff-a72b-c2ca2f5cf0fe">Agile Security provides a set of wide-implicating and easily understandable principles that affect an organization&#x2019;s cybersecurity posture, especially suitable for today&#x2019;s fast-paced and challenging cybersecurity landscape.</p>
       </div>
       <br />
       <div id="_guidelines_for_implementing_agile_security" class="Section3">
         <h1 class="Annex"><b>Appendix A</b><br />(normative) <br /><b>Guidelines for implementing Agile Security</b></h1>
-        <div id="_approach_a_cross_train"><h2>A.1. Approach A: Cross-train</h2><p id="_1bf2660e-1a46-435c-9683-45e6db7774bd">Form an operational security function by selecting 1 or 2 persons that have an interest or background in security from each team and delegate security related tasks to those individuals. Make these persons a representative of the operational security teams.</p>
-<p id="_10696c43-8769-4bcd-8d38-f5bc4e3fbc9b">The operational security teams know exactly what types of operating systems are used, applications are supported for the business, etc. In some organizations, this collaboration involves embedding IT operations specialists within software development teams, thus forming a cross-functional team. This effort may also be combined with a skills matrix.</p></div>
-        <div id="_approach_b_delegate"><h2>A.2. Approach B: Delegate</h2><p id="_b5d8cd7f-7b18-4cf0-b299-85d1289bbdfe">Delegate risk management, maintenance of BCPs etc. to department heads. Freeing up resources of the dedicated security team so they can focus on the security process management and providing the framework(s). The department heads know exactly what they have in house, what risks there are.</p>
-<p id="_b55cb04b-608c-450d-b4c0-5002fff47b52">DevOps is process neutral. Organizations can use Agile or Scrum. Have security engineers attend daily scrum meetings, make them part of the DevOps team.</p></div>
+        <div id="_approach_a_cross_train"><h2>A.1. Approach A: Cross-train</h2><p id="_cb8c7518-960e-47ca-85cf-fe8204fbb907">Form an operational security function by selecting 1 or 2 persons that have an interest or background in security from each team and delegate security related tasks to those individuals. Make these persons a representative of the operational security teams.</p>
+<p id="_6527e1b6-30eb-4287-9fa9-883547997568">The operational security teams know exactly what types of operating systems are used, applications are supported for the business, etc. In some organizations, this collaboration involves embedding IT operations specialists within software development teams, thus forming a cross-functional team. This effort may also be combined with a skills matrix.</p></div>
+        <div id="_approach_b_delegate"><h2>A.2. Approach B: Delegate</h2><p id="_717fcb5a-c54a-494b-943a-a9020b9e9dfc">Delegate risk management, maintenance of BCPs etc. to department heads. Freeing up resources of the dedicated security team so they can focus on the security process management and providing the framework(s). The department heads know exactly what they have in house, what risks there are.</p>
+<p id="_99e8b56c-3928-42d2-9dfd-4a147522425b">DevOps is process neutral. Organizations can use Agile or Scrum. Have security engineers attend daily scrum meetings, make them part of the DevOps team.</p></div>
       </div>
       <br />
       <div id="_what_agile_security_is_not" class="Section3">
         <h1 class="Annex"><b>Appendix B</b><br />(normative) <br /><b>What Agile Security is not</b></h1>
-        <p id="_18b59462-8c29-43c8-b625-9737938e937b">TODO: Placeholder if we need it.</p>
+        <p id="_4267df71-7ea0-4473-8130-cc0fd8b2e9d8">TODO: Placeholder if we need it.</p>
       </div>
       <br />
       <div>
