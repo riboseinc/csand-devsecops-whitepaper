@@ -1,27 +1,85 @@
+:repo-name: csand-devsecops-whitepaper
+
 = CSA DevSecOps WG: Agile Security position paper
 
-image:https://travis-ci.com/riboseinc/csand-devsecops-whitepaper/master.svg[Build Status, link="https://travis-ci.com/riboseinc/csand-devsecops-whitepaper"]
+image:https://travis-ci.com/riboseinc/csand-devsecops-whitepaper.svg?branch=master["Build Status", link="https://travis-ci.com/riboseinc/csand-devsecops-whitepaper"]
+
+This document is available in its rendered forms here:
+
+* https://riboseinc.github.io/csand-devsecops-whitepaper/[CSA Agile Security position paper (HTML)]
+* https://riboseinc.github.io/csand-devsecops-whitepaper/csand-devsecops-whitepaper.pdf[PDF]
+* https://riboseinc.github.io/csand-devsecops-whitepaper/csand-devsecops-whitepaper.xml[Metanorma XML]
+* https://riboseinc.github.io/csand-devsecops-whitepaper/csand-devsecops-whitepaper.rxl[Relaton XML (Bibliographic item)]
 
 == Introduction
 
 This document describes the rationale, definitions and benefits of DevSecOps and its related practices.
 
-== Getting started
+This document is written in AsciiDoc using https://www.metanorma.com/software/metanorma-csand/[Metanorma-CSAND], the Metanorma flavor for "`CSA Normal Documents`".
+
+
+== Usage
 
 === General
 
-This document is written in AsciiDoc using https://www.metanorma.com/software/metanorma-csand/[Metanorma-CSAND], the Metanorma flavor for "`CSA Normal Documents`".
+This specification is built using https://www.metanorma.com[Metanorma].
 
-=== Installation
 
-See https://www.metanorma.com/overview/getting-started/
+=== Fetching the document
 
-=== Building/Iterating the document
+[source,sh]
+----
+git clone https://github.com/riboseinc/{repo-name}/
+----
+
+
+=== Installing Build Tools
+
+See the https://www.metanorma.com/overview/getting-started/[Metanorma Quick Start Guide]
+for more information.
+
+
+=== Running via Docker or locally
+
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
+
+If you don't want to deal with local dependencies, use the docker
+version by:
+
+[source,sh]
+----
+export METANORMA_DOCKER=1
+----
+
+The `Makefile` will automatically choose the proper command to
+execute.
+
+
+=== Building the document
 
 [source,sh]
 ----
 make clean all
-open csand-*.html
+----
+
+The following outputs will be built:
+
+* RSD XML (https://github.com/riboseinc/metanorma-model-rsd) (`[filename].xml`)
+* HTML (`[filename].html`)
+* PDF (`[filename].pdf`)
+
+
+
+=== Iterating the document
+
+[source,sh]
+----
+make clean all
+open *.html
 ----
 
 
+== Deployment
+
+The built artifacts are deployed on GitHub pages.

@@ -1,3 +1,21 @@
+GIT
+  remote: https://github.com/riboseinc/metanorma-csand
+  revision: 768c0aed99c0bf4bb38eb98a09754075b7846ea9
+  specs:
+    metanorma-csand (1.0.7)
+      asciidoctor (~> 1.5.7)
+      asciimath
+      htmlentities (~> 4.3.4)
+      image_size
+      isodoc (~> 0.9.0)
+      metanorma-standoc (~> 1.0.0)
+      mime-types
+      nokogiri
+      ruby-jing
+      ruby-xslt
+      thread_safe
+      uuidtools
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -86,19 +104,6 @@ GEM
       metanorma-rsd (~> 1.0.5)
       metanorma-standoc (~> 1.0.6)
       nokogiri
-    metanorma-csand (1.0.7)
-      asciidoctor (~> 1.5.7)
-      asciimath
-      htmlentities (~> 4.3.4)
-      image_size
-      isodoc (~> 0.9.0)
-      metanorma-standoc (~> 1.0.0)
-      mime-types
-      nokogiri
-      ruby-jing
-      ruby-xslt
-      thread_safe
-      uuidtools
     metanorma-csd (1.0.8)
       isodoc (~> 0.9.6)
       metanorma-standoc (~> 1.0.0)
@@ -188,8 +193,7 @@ PLATFORMS
 DEPENDENCIES
   metanorma
   metanorma-cli
-  metanorma-csand
-  metanorma-iso
+  metanorma-csand!
 
 BUNDLED WITH
-   1.17.0
+   1.17.1
