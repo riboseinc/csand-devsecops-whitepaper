@@ -14,10 +14,6 @@ env:
   global:
     - JAVA_OPTS="java.awt.headless=true"
     - PLANTUML_URL=http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
-    - ENCRYPTION_LABEL=bb73481fab12
-    - COMMIT_AUTHOR_EMAIL=travis-ci@ribose.com
 script:
   - plantuml -testdot
-  - make clean all
-  - make publish
-  - '[ "${TRAVIS_BRANCH}" = "master" ] && ./deploy.sh'
+  - make clean all publish deploy
