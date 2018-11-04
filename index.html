@@ -1,0 +1,1438 @@
+<?xml version="1.0"?>
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:epub="http://www.idpf.org/2007/ops">
+  <head><style>
+  <!--
+/*
+0 CSS RESET
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Source Sans Pro", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Space Mono", monospace; }
+
+h1, h2, h3, h4, h5, h6, .h2Annex {
+  font-family: "Source Sans Pro", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+
+dt {
+  font-weight: 500;
+  grid-column-start: 1; }
+
+dd {
+  grid-column-start: 2; }
+
+dd p, dt p {
+  margin-top: 0px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+1. HTML & Body
+*/
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  color: #1d1d1d;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: #ffffff; }
+
+main {
+  margin: 0 3em 0 6em; }
+
+#toc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
+
+/*
+2. Responsive navigation layout
+*/
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    margin-right: 30px;
+    background-color: #f7f7f7; }
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #4D7EA5;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+  #toggle span {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .container {
+    padding-left: 360px; }
+  .rule.toc {
+    display: none; }
+  h1.toc-contents {
+    margin-top: 1em; }
+  ul#toc-list {
+    padding: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  #toc {
+    padding: 0 1.5em 0 1.5em;
+    overflow: visible; } }
+
+@media screen {
+  img {
+    width: 100%;
+    height: auto; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#toc li {
+  padding: 5px 10px; }
+
+#toc a {
+  color: #4D7EA5;
+  text-decoration: none;
+  display: block; }
+
+#toc a:hover {
+  color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active a {
+  color: white; }
+
+#toc .toc-active, #toc li:hover {
+  background: #4D7EA5;
+  box-shadow: inset -5px 0px 10px -5px #4D7EA5 !important; }
+
+#toc li:hover a {
+  color: white; }
+
+/*
+Document types + stages
+*/
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  /*box-shadow: -5px 0px 10px #1d1d1d*/ }
+
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 98;
+  /*box-shadow: -5px 0px 10px #1d1d1d*/ }
+
+.document-type {
+  position: relative;
+  width: 25px; }
+
+.document-stage {
+  position: relative;
+  width: 25px; }
+
+p.document-type, p.document-stage {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0; }
+
+p.document-type {
+  font-weight: 400;
+  height: 120px; }
+
+#governance-band p.document-type {
+  font-weight: 400;
+  height: 230px !important; }
+
+p.document-stage {
+  font-weight: 300;
+  height: 160px; }
+
+#standard-band {
+  color: #0ac442; }
+
+#standard {
+  border-bottom: solid 3px #0ac442; }
+
+#governance {
+  border-bottom: solid 3px #750697; }
+
+#governance-band {
+  background-color: #750697; }
+
+#guide {
+  border-bottom: solid 3px #48a0e7; }
+
+#guide-band {
+  background-color: #48a0e7; }
+
+.coverpage-maturity {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+#working-draft {
+  border-bottom: solid 3px #fda706; }
+
+#working-draft-band p {
+  color: #fda706; }
+
+#committee-draft {
+  border-bottom: solid 3px #fd06fd; }
+
+#committee-draft-band {
+  background-color: #fd06fd; }
+
+#draft-standard {
+  border-bottom: solid 3px #fdf906; }
+
+#draft-standard-band {
+  background-color: #fdf906; }
+
+#standard {
+  border-bottom: solid 3px #0ac442; }
+
+#obsolete {
+  border-bottom: solid 3px #7e0d13; }
+
+#obsolete-band {
+  background-color: #7e0d13; }
+
+/*
+3. TYPOGRAPHY
+*/
+/*
+3.1 Titles
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.2em;
+  color: black;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  /*  margin-top: 2em;*/ }
+
+h1#content {
+  margin-top: 2em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.5em; }
+
+/*
+span[id^="toc"]:after {
+float: left;
+padding-right: 4px;
+margin-left: -20px;
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+font-size: 0.8em;
+color: #cfcfcf;
+content: "\f0c1";
+}
+*/
+.TermNum, .Terms, .AltTerms {
+  color: #00549f;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/*
+p.AltTerms {
+font-style: italic;
+margin: 0;
+}
+*/
+span.obligation {
+  font-weight: 400; }
+
+/*
+3.2 Links
+*/
+a, a:visited {
+  text-decoration: none;
+  color: #4D7EA5; }
+
+a:hover {
+  color: white;
+  background: #4D7EA5;
+  box-shadow: 3px 0 0 #4D7EA5, -3px 0 0 #4D7EA5;
+  /* padding: 2px 0 2px 0; */ }
+
+::selection {
+  background: #4D7EA5;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+::-moz-selection {
+  background: #4D7EA5;
+  /* Gecko Browsers */
+  color: white; }
+
+.contact-info a:hover {
+  color: #4D7EA5;
+  text-decoration: underline;
+  background: none;
+  box-shadow: 0 0 0 0; }
+
+/*
+3.3 Lists
+*/
+ul, ol {
+  margin-left: 1em;
+  list-style-position: inside; }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+
+/*
+3.4 Rules
+*/
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #00427e;
+  margin: 2em 0; }
+
+/*
+h2 p {
+display: inline;
+}
+*/
+/*
+3.5 Bibliograhy
+*/
+p.Biblio, p.NormRef {
+  margin-top: 1em;
+  margin-left: 2em;
+  text-indent: -2em; }
+
+/*
+3.6 Source Code + figures
+*/
+.figure, .Sourcecode {
+  font-family: "Space Mono", monospace;
+  background-color: #F5F6F6;
+  font-size: 1em;
+  line-height: 1.6em;
+  overflow: auto;
+  border-left: solid 5px #B1B6B8;
+  color: #5b5e5f;
+  padding: 1.2em 1.2em 1.2em 2.2em;
+  margin: 2em 0 2em -1em; }
+
+.FigureTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+/*
+3.7 Notes
+*/
+.Note {
+  background-color: #F5F6F6;
+  border-left: solid 5px #B1B6B8;
+  color: #5b5e5f;
+  padding: 0.5em 1em; }
+
+.note_label {
+  font-weight: 700; }
+
+/*
+3.8 Examples
+*/
+td.example,
+td.example_label {
+  background-color: #F5F6F6;
+  color: #5b5e5f;
+  padding: 0; }
+
+td > p.example {
+  margin: 0;
+  border-left: solid 5px #B1B6B8;
+  padding: 1em; }
+
+td.example_label {
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0; }
+
+/*
+3.9 Tables
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em;
+  border: solid 1px #F5F6F6 !important; }
+
+table, th, td {
+  border: none !important;
+  font-size: 1em; }
+
+td, th {
+  padding: 1em; }
+
+td.header {
+  font-weight: 400; }
+
+tr:nth-child(even) {
+  background-color: #FBF9F8; }
+
+thead {
+  background-color: #4D7EA5;
+  color: white;
+  border: none; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/*
+3.10 Footnotes
+*/
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/*
+3.11 Blockquotes
+*/
+.Quote {
+  background-color: #F5F6F6;
+  border-left: solid 5px #B1B6B8;
+  color: #5b5e5f;
+  padding: 1.2em 1.2em 1.2em 2.2em;
+  margin: 2em 0 2em -1em;
+  font-style: italic; }
+
+.QuoteAttribution {
+  text-align: right; }
+
+/*
+3.12 Formulas
+*/
+.formula, .Formula {
+  background-color: #F5F6F6;
+  border-left: solid 5px #B1B6B8;
+  color: #5b5e5f;
+  padding: 1.2em 1.2em 1.2em 2.2em;
+  margin: 2em 0 2em -1em;
+  text-align: center; }
+
+/*
+3.13 Contact Info
+*/
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-top: 5em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+
+.contact-info p, .contact-info a {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; }
+
+.contact-info .name {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0; }
+
+.contact-info .address {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0; }
+
+/*
+Keywords
+*/
+span.keyword {
+  font-weight: 400; }
+
+/*
+Paragraphs
+*/
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  /* color: #47430c;*/
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+
+.Admonition p, .admonition p {
+  margin: 0; }
+
+/*
+4.0 Page header
+*/
+/*
+4.1 Top Logo
+*/
+/*
+.wrapper-top {
+background-color: #0e1a85;
+background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==');
+color: #ffffff;
+padding: 2em 0;
+}
+*/
+.coverpage {
+  background: radial-gradient(#2D5D8E, #0D1E2B);
+  /*background-image: url("img/dots@2x.png");*/
+  color: #ffffff;
+  padding: 2em;
+  margin-left: 2em; }
+
+.doc-number {
+  font-size: 1em;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 3em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage {
+  text-align: center; }
+
+.coverpage-logo {
+  margin-bottom: 1em; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.document-info {
+  padding: 2em;
+  text-align: center;
+  margin-left: 1em; }
+
+/*
+4.2 Document Identity
+*/
+.coverpage-doc-identity {
+  width: 100%;
+  height: 50px;
+  margin: 2em 0; }
+
+.title-first {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: underline solid #EE9C4F;
+  padding: 1em 0.5em; }
+
+.title-second {
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+img.csa-logo {
+  height: 50px;
+  width: auto;
+  float: right;
+  margin-right: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 1em 0em 1em 0em;
+  text-transform: uppercase; }
+
+.section-title {
+  background: linear-gradient(#A5A8AB, #B1B6B8);
+  padding: 4em 2em 3em 5.5em;
+  margin: 4em -3em 3em -5em;
+  border-bottom: 8px solid #EE9C4F; }
+
+.section-title .super-title {
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1em;
+  margin: 0;
+  color: white;
+  text-transform: uppercase; }
+
+.section-title h1 {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  color: white;
+  text-transform: none; }
+
+h2 {
+  border-bottom: solid 1px #4D7EA5;
+  color: #4D7EA5; }
+
+h3, h4, h5, h6 {
+  color: #EE9C4F; }
+
+/*
+4.3 Draft Warning
+*/
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #00549f;
+  padding: 1em; }
+
+.coverpage-warning .title {
+  color: #f36f36;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+/*
+4.4 Copyright
+*/
+.copyright {
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: left; }
+
+.copyright .name, .copyright .address {
+  color: #00549f; }
+
+/*
+5.0 Other styles
+*/
+/*
+To top button
+*/
+#myBtn {
+  font-family: "Space Mono", monospace;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #4D7EA5;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+
+#myBtn:hover {
+  opacity: 1; }
+
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+nav h1:hover a:after {
+  display: none; }
+
+.document-stage-band p {
+  color: #EE9C4F !important; }
+
+.document-type-band p {
+  color: #4D7EA5 !important; }
+
+@page {
+  margin: 1cm; }
+
+@media print {
+  .section-title, .document-info, nav {
+    page-break-before: always; }
+  .coverpage {
+    height: 23cm; }
+  .coverpage-doc-identity {
+    position: absolute;
+    bottom: 1cm; }
+  #toggle, .document-stage-band,
+  .document-type-band {
+    display: none; }
+  .container {
+    padding-left: 0; }
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; }
+  #toc .toc-active a {
+    color: #4D7EA5; }
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc li:hover a {
+    color: black; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Agile Security: the intersection of security, development and operations</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--TOC script import-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,300i,600,900" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900" rel="stylesheet" />
+    <!--Font awesome import for the link icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="working-draft-band">
+    <p class="document-stage">Working Draft</p>
+</div>
+
+<div class="document-type-band" id="standard-band">
+    <p class="document-type">CSA Standard</p>
+</div>
+
+<div id="toggle"> <span>&#x2022;</span> </div>
+
+<header>
+
+<!--<div class="WordSection1">-->
+<div class="coverpage">
+
+  <div class="coverpage-logo">
+    <span>Cloud Security Alliance</span>
+  </div>
+
+  <div class="doc-number">
+    <span class="docnumber">CSA 20001(wd)</span>
+    <span class="docnumber-separator">:</span>
+    <span class="docyear">2018</span>
+  </div>
+
+  <div class="title-first">Agile Security: the intersection of security, development and operations</div>
+  <div class="title-second"></div>
+
+  <div class="coverpage-tc-name">
+    <span>DevSecOps</span>
+  </div>
+
+  <div class="coverpage-doc-identity">
+    <img class="csa-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAACPCAYAAADUSI02AAAACXBIWXMAAAsTAAALEwEAmpwYAAAGAGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2LTAxOjA4OjIxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTgtMDUtMTZUMDk6MTk6MjUtMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE4LTA1LTIyVDEwOjQ0OjAxLTA0OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE4LTA1LTIyVDEwOjQ0OjAxLTA0OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNlMzJkMGI1LTljMjMtNDM2NS05NzcxLTJhMzVmYTMzMmU1MCIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjRlY2I5MDg2LTFkNjYtMTQ0Yy1hNzQwLTlmOWE3YjAwYzNmYiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjhiY2NiNjMwLTcyODUtNGNmNC04ZmExLWYyMTYzMmZhMTk1ZCI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OGJjY2I2MzAtNzI4NS00Y2Y0LThmYTEtZjIxNjMyZmExOTVkIiBzdEV2dDp3aGVuPSIyMDE4LTA1LTE2VDA5OjE5OjI1LTA0OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoTWFjaW50b3NoKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6M2UzMmQwYjUtOWMyMy00MzY1LTk3NzEtMmEzNWZhMzMyZTUwIiBzdEV2dDp3aGVuPSIyMDE4LTA1LTIyVDEwOjQ0OjAxLTA0OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4E7fdxAAA0UUlEQVR4nO2deZgdVZn/P013Q9KSjQaaDiEdAoFAxAxBFMImiEIYQWYANbigoriwiIriLILoIMPiiIgzKDLgDCKOQUAYVgf0RxCECIKGRAKxE7KxNNkgAdPh/P74Vnmrzq313qrbfW/O53nqSaq76pxTdW+f95x3bTPG4HC0OO3AscAA8MAQj6UV6AHeC/wMWD3EY3EMIVsN9QAcjhLpAmYDv0KT3WtDOprmpw84D3gEOA1YN7TDcQw1HUM9AIejJEYB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" alt="csa-logo" />
+  </div>
+</div>
+
+<div class="title-section1">
+  <div class="document-info">
+    <div class="coverpage-stage-block">
+      <span class="coverpage-stage" id="standard">CSA Standard</span>
+    </div>
+
+    <div class="coverpage-stage-block">
+      <span class="coverpage-maturity" id="working-draft">Working Draft</span>
+    </div>
+
+
+    <div class="coverpage-warning">
+      <span class="title">Warning for Drafts</span>
+
+      <p class="content">
+      This document is not a CSA Standard. It is distributed for review and
+      comment, and is subject to change without notice and may not be referred to as
+      a Standard. Recipients of this draft are invited to submit, with their
+      comments, notification of any relevant patent rights of which they are aware
+      and to provide supporting documentation.
+      </p>
+    </div>
+
+
+    <div class="copyright">
+      <p class="year">&#xA9; 2018 Cloud Security Alliance, LLC.</p>
+
+      <p class="message">
+All rights reserved. Unless otherwise specified, no part of this
+publication may be reproduced or utilized otherwise in any form or by any
+means, electronic or mechanical, including photocopying, or posting on the
+internet or an intranet, without prior written permission. Permission can
+be requested from the address below.
+      </p>
+
+      <div class="contact-info">
+        <p class="name">Cloud Security Alliance</p>
+          <p class="address">
+            2212 Queen Anne Ave N<br />
+            Seattle<br />
+            WA 98109<br />
+            United States of America<br />
+            <br />
+            <a href="mailto:copyright@cloudsecurityalliance.com">copyright@cloudsecurityalliance.com</a><br />
+            <a href="www.cloudsecurityalliance.com">www.cloudsecurityalliance.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rule"></div>
+  </div>
+
+</header>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <br />
+      <div>
+        <h1 class="ForewordTitle">Foreword</h1>
+        <p id="_1e6d990f-80a7-42ef-8294-19707464a211">The Cloud Security Alliance ("CSA") is global non-profit
+organization with the aim to facilitate and protect user information in the
+cloud and its ecosystem.</p>
+        <p id="_dfd7648e-dc09-4c0e-9b59-29f22d34592c">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CSA shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CSA list of patent declarations received (see
+www.cloudsecurityalliance.com/patents).</p>
+        <p id="_30ebea51-b6af-4970-b2c9-6c27b1841140">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+        <p id="_7cd97614-2540-4ec7-85d8-d70bc53a8e97">This document was prepared by the Cloud Security Alliance <i>DevSecOps</i>
+working group.</p>
+      </div>
+      <br />
+      <div class="Section3" id="introduction">
+        <h1 class="IntroTitle">Introduction</h1>
+        <div id="_background"><h2>Background</h2><p id="_3e6aeada-5aa4-4a08-ab9f-036882acfa2f">DevOps, the practice of applying developmental practices on infrastructure operations, has been shown to positively impact efficiencies of operation teams today, especially in the cloud environment.</p>
+<p id="_95ab79c6-a250-4380-8df1-1371735d582a">Given its strengthening adoption, it is a logical next step in applying those practices to the arena of security management, as well as considering its impact on security itself.</p></div>
+        <div id="_application_to_security"><h2>Application to security</h2><p id="_83f21fa4-2139-4ffe-a29d-0819592c44e0">DevOps is now broadly practiced but it has been generally separated from security practices. There is currently no standardized term in industry that cater to this aspect.</p>
+<p id="_048e0aa3-fa4a-43f5-93e6-3d743f1bf556">To explain the intersection of security and DevOps, as well as the amalgamation of security, development and operations practices, a number of terms have been proposed by members of community, including "DevOpsSec", "DevSecOps", "SecDevOps".</p>
+<p id="_d9e8d0ed-4efe-4c6b-bba3-4e06329d1894">These terms have been used mostly interchangeably, but the meanings they convey can be vastly different. The definitions of these terms can widely conflict with each other depending on the particular understanding of the reader.</p>
+<p id="_b551c8ca-3b7d-4f51-b77d-a60db9dcf3a4">Moreover, there is no industry recognized definition for security automation, which is a core concept to the application of DevOps practices to security operations, leading to confusion and misinterpretations.</p>
+<p id="_e25eacc3-fa55-41a1-84a0-549741b22a07">It is therefore crucial to clarify and standardize such terms for a global and wider industry audience.</p></div>
+        <div id="_external_pressure_to_organizations"><h2>External pressure to organizations</h2><p id="_4da791ff-426c-432f-a94a-5a95b7203624">Organizations today are faced with a number of security management issues, including:</p>
+<ul id="_b1bc645e-b845-44f9-863a-dfca19da673f">
+  <li>
+    <p id="_110fc6d2-b291-48bf-b0f8-82602bc4c431">spiralling compliance governance costs;</p>
+  </li>
+  <li>
+    <p id="_f6c5ec76-cb18-42ef-845a-e1d7fa6fcaae">global shortage of cyber security professionals, which forces organizations to more efficiently utilize staff;</p>
+  </li>
+  <li>
+    <p id="_ebab9f2b-b657-4776-9a19-a6603f54a99c">the notable disconnect between strategic security and operational security.</p>
+  </li>
+</ul>
+<p id="_e332e5de-7e14-4f1d-b14b-7950cf7a2f98">All of these factors force an organization to deliver more security "bang for the buck".</p></div>
+        <div id="_purpose"><h2>Purpose</h2><p id="_2b4e2982-ad50-42c9-97b7-85bd372f910a">This whitepaper aims to clarify and standardize an authoritative definition of the intersection between the three aspects of security, development and operations, and use it to generalize the principles of a novel security management approach we call "Agile Security".</p>
+<p id="_270b8311-76ca-4bf2-a90e-b1b2bd252547">Several approaches to Agile Security are suggested to resolve the availability gap of cyber security professionals.</p></div>
+      </div>
+      <p class="zzSTDTitle1">Agile Security: the intersection of security, development and operations</p>
+      <div id="scope">
+        <h1>1.&#xA0; Scope</h1>
+        <p id="_b4a10288-208c-49ab-913e-03a1e2663ef5">This document:</p>
+        <ul id="_089d40fd-bcc5-4e66-90d6-f629949e1cb4">
+  <li>
+    <p id="_4d1bd268-608a-44d7-b3d8-772edf181821">provides rigorous definitions for the terms "DevOpsSec", "DevSecOps" and "SecDevOps";</p>
+  </li>
+  <li>
+    <p id="_6dcf72d6-ac72-40e6-9b46-9681aa974f32">describes the benefits of amalgamating security, development and operation practices for integrated management;</p>
+  </li>
+  <li>
+    <p id="_76da0fc6-0faf-4913-a5a8-2b6e17de009c">describes the "Agile Security" approach that represents a new paradigm in security management.</p>
+  </li>
+</ul>
+      </div>
+      <div>
+        <h1>2.&#xA0; Normative references</h1>
+        <p>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+        <p id="ISO27001" class="NormRef">ISO/IEC 27001, <i> Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Information security management systems&#x2009;&#x2014;&#x2009;Requirements</i></p>
+        <p id="CCM301" class="NormRef">CSA CCM 3.0.1,
+    <i>Cloud Security Alliance Cloud Controls Matrix, v3.0.1</i>
+  </p>
+      </div>
+      <div id="terms"><h1>3.&#xA0; Terms and definitions</h1><p>No terms and definitions are listed in this document.</p>
+</div>
+      <div id="devops">
+        <h1>4.&#xA0; Essence of DevOps</h1>
+        <div id="_general"><h2>4.1. General</h2><p id="_ec1f28e6-5602-4a70-b365-81329ca6d724">While the term "DevOps" has been widely defined by its practices and toolsets, there are several conflicting definitions on what the term really represents.</p>
+<p id="_2b101be5-87d0-4d1f-b16c-0b75aaa6b582">Some of them are too narrow while some are too broad to be meaningful. For example, the Wikipedia article on DevOps claims it is "a set of practices that emphasize the collaboration and communication of both software developers and information technology (IT) professionals while automating the process of software delivery and infrastructure changes", which is too vague, too broad as well as inaccurate.</p>
+<p id="_15e36bdc-be33-4c37-a30a-fe34541c6383">"DevOps" practices today have minimal, if any, impact on software application development process itself. Its practices and related tools mainly service infrastructure automation, through concepts made apparent by Agile software development practices, such as continuous integration and delivery and programmatic (software-defined) infrastructure.</p></div>
+        <div id="_definition"><h2>4.2. Definition</h2><p id="_fc882bd7-1fd3-42d8-a942-b76567dc4d7c">In this document, we clarify the following definition:</p>
+<dl id="_530c0fd7-840c-4172-be6f-0edf37a9361d"><dt><p>DevOps</p></dt><dd>
+    <p id="_f03e10bb-bb2c-468e-8bf9-20fa9a5ea4d5">The cross-application of software development and methodologies to infrastructure operations, chiefly for automating infrastructure management.</p>
+  </dd></dl></div>
+      </div>
+      <div id="questions">
+        <h1>5.&#xA0; The (right) questions worth answering</h1>
+        <p id="_fc8880c9-b103-4340-b91b-053b477221b0">Given the strong acclaim of DevOps practices, it is worth understanding how similar concepts affect security.</p>
+        <p id="_648b554a-c31d-4e37-b4e0-a80888cef6b2">Here are the important questions we answer below:</p>
+        <ul id="_92354c9e-04ed-4f1a-8e8e-dd2347baf764">
+  <li>
+    <p id="_ed7a36be-8a59-4778-866d-7e50d9570be7">What is the impact of DevOps practices on security?</p>
+  </li>
+  <li>
+    <p id="_4eb4e2e2-2639-4659-b371-1bad9686b2ad">How do we provide security through DevOps?</p>
+  </li>
+  <li>
+    <p id="_303ae55c-da26-4c10-94b7-7b62e60770c8">How does an organization implement security through automation?</p>
+  </li>
+</ul>
+      </div>
+      <div id="dos">
+        <h1>6.&#xA0; DevOpsSec: Impact of DevOps practices on security</h1>
+        <div id="_general_2"><h2>6.1. General</h2>
+
+  <p id="_66f06acf-9388-467a-9bbd-c7f0fa669ccd">What is the impact of DevOps practices on security? Or more specifically, how do organizations ensure that DevOps does not compromise security? This has been called "DevOpsSec": "DevOps" security. DevOps practices bring strong impact on resulting infrastructure and operations. There are inherent security requirements in DevOps processes.</p>
+</div>
+        <div id="_definition_2"><h2>6.2. Definition</h2>
+
+  <dl id="_bf78686a-a69b-41ea-aa29-6b30a7855bcf"><dt><p>DevOpsSec ("DOS")</p></dt><dd>
+    <p id="_ae0c1ae3-6e6d-45a3-a5e5-450484faaa94">The embedding of information security principles to protect processes that utilize DevOps practices.</p>
+  </dd></dl>
+</div>
+        <div id="_implications"><h2>6.3. Implications</h2><p id="_9f8f02a7-b769-47dd-8cc4-bc653c4a6bb7">A software-defined infrastructure is highly beneficial (or a wet dream) for the experienced infrastructure engineer, where virtual instances, containers, and virtual network devices are spin up or down through fingertips on the keyboard.</p>
+<p id="_b1227cc1-d113-4588-bbb4-cd69cfaf9994">Yet, as best put by Spiderman, power bring responsibility. It is equally true that the novice engineer armed with some development skill could have his fingertips spin things out of control. Very often, create security vulnerabilities due to lack of consideration of all aspects surrounding the infrastructure. E.g. lax firewall rulesets, default credentials or increased attack surface.</p>
+<p id="_6ddb1221-11d8-488a-82ea-b6fb11ba3dd7">This happens more often than one thinks. As ironic it may be, software development and infrastructure administration are generally separate skill sets that doing one well does not necessary translate to the other. Anecdotes of novice developers attempting to use "DevOps" in running infrastructure causing moments of reflection abound.</p>
+<p id="_8dbe2208-c17d-4d71-bcf8-b724780d3504">In this document, we will describe the crucial security practices for protecting DevOps processes and preventing DevOps from being a threat.</p></div>
+      </div>
+      <div id="dso">
+        <h1>7.&#xA0; DevSecOps: providing security through DevOps</h1>
+        <div id="_general_3"><h2>7.1. General</h2>
+
+  <p id="_3e185e22-0472-42b5-9799-85dbdd215f47">How do we provide security through DevOps? Despite this question containing similar keywords with the previous one, it is an even more important question. Is it possible to apply DevOps concepts, where development practices can and have enhanced operations efficiency, onto security? Some have called this "DevSecOps" for "Security DevOps".</p>
+</div>
+        <div id="_definition_3"><h2>7.2. Definition</h2>
+
+  <dl id="_6c878cc3-5c20-4941-883e-68bb92b1b680"><dt><p>DevSecOps ("DSO")</p></dt><dd>
+    <p id="_38ce11cf-8ce0-4b13-9e5a-dfecfa0b50e4">The automation of information security processes through DevOps practices.</p>
+  </dd></dl>
+</div>
+        <div id="_implications_2"><h2>7.3. Implications</h2><p id="_ee7b2437-0fe6-441c-851f-45b8fe25992c">On a tactical level, DSO represents the "integration and automation of security controls through DevOps using automated toolchains". The CSO sets the policies following business requirements and risk management, which could be applied programmatically.</p>
+<p id="_daee4891-4cd1-4d52-a1ef-f9e1613aba67">Examples of DSO practices:</p>
+<ul id="_9611e405-e710-4c95-a086-e206de259aba">
+  <li>
+    <p id="_f05cc75f-9e9b-45e6-8391-dd9589d60662">Infrastructure</p>
+    <ul id="_bf33d687-59e5-4b36-90c5-a533e83fc5db">
+  <li>
+    <p id="_13b945db-1b97-4a46-83a4-28cdd55525d5">Immutable infrastructures</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_628c2cd1-31e0-411e-85ab-275ee54e9620">QA</p>
+    <ul id="_65075bda-439b-4652-83de-544c6de4f221">
+  <li>
+    <p id="_c621ff11-faa4-4860-9872-f1ebc9cba039">Implementation of data masking of data used in development for testing</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_5d543034-afae-400a-8094-3a4a0c9fea9f">Containers</p>
+    <ul id="_6f7ae98b-1a9a-4c26-a474-f8fbe6f8cec8">
+  <li>
+    <p id="_df582db6-2662-4698-8c4c-0c7922ab3a45">Vulnerability scanning during building of container images</p>
+  </li>
+  <li>
+    <p id="_165dc248-91ed-4630-8de1-5c3d2b39fe3e">Patch management of applications and libraries inside containers</p>
+  </li>
+  <li>
+    <p id="_6b22bcad-6d21-4c0c-ac1d-8c961fa8876e">Hardening / secure configuration, self-healing</p>
+  </li>
+  <li>
+    <p id="_6f1add5a-a34e-46d6-a882-d36802491aed">PKI / Digital signatures</p>
+  </li>
+  <li>
+    <p id="_8c2ffdda-411b-4c57-8e39-518e95373cd5">Anti-virus scan during building of container images</p>
+  </li>
+  <li>
+    <p id="_c917c91b-c0a0-4603-a83c-d7971f605e9f">Certify container images</p>
+  </li>
+  <li>
+    <p id="_8d9ce9ec-41bd-4c7b-a0a7-6328ddd6507f">Scan for embedded keys, hardcoded credentials, push for role based access technology</p>
+  </li>
+  <li>
+    <p id="_5fd6054d-e48e-4310-836f-9b02219a21d7">Cryptographically sign and certify container images</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_e9ffe15f-351d-4e76-8ddb-7a7c5633256c">Operating systems / VM images</p>
+    <ul id="_92a8a022-21de-47c1-9d92-d08f968b68ad">
+  <li>
+    <p id="_28dc819f-9afb-403a-a716-28424be076bf">Vulnerability scanning during building of VM images</p>
+  </li>
+  <li>
+    <p id="_391b48cc-4c4e-4eb5-967a-98a668cbec1a">Patch management of applications and libraries of the operating system</p>
+  </li>
+  <li>
+    <p id="_f4455a36-10df-4a9f-aa89-edb14d1d1078">Hardening / secure configuration, self-healing</p>
+  </li>
+  <li>
+    <p id="_2b02525d-b60a-4a83-8f57-d256168944fb">Anti-virus scan during building of VM images</p>
+  </li>
+  <li>
+    <p id="_320f27e3-95ae-40cd-b5b0-c40966a4bdc0">Cryptographically sign and certify VM images</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_1c12c7f1-92c5-4934-89e6-b5a6d617b0c9">Code / applications</p>
+    <ul id="_85c22361-d98d-4996-b8fe-06dd2f11d955">
+  <li>
+    <p id="_1807d2ff-2a8d-4033-889e-5b493540a8a5">Static code analysis after code commits, builds or releases</p>
+  </li>
+  <li>
+    <p id="_e2c38dde-93d0-4977-ab6e-2f0adac368ef">Scanning for embedded keys, hardcoded credentials, push for role based access</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_eb905d5f-4247-4947-9e34-05718798f9ff">Release management</p>
+    <ul id="_532a6b7f-2a20-474b-9fcc-8a6a422cdaeb">
+  <li>
+    <p id="_f5c8ded5-e792-4a6f-aefe-65b3db8df984">Create new public/private keys for each release</p>
+  </li>
+  <li>
+    <p id="_db73133f-f76a-4c48-a869-88e8cf28879a">Only accept signed/certified container and OS images</p>
+  </li>
+  <li>
+    <p id="_6ea0c325-70d9-4dac-b42a-786c59c25b3d">Revocation of older SSL certificates / private keys / PKI after each release</p>
+  </li>
+</ul>
+  </li>
+</ul></div>
+      </div>
+      <div id="ds">
+        <h1>8.&#xA0; DevSec: Automating security practices</h1>
+        <div id="_general_4"><h2>8.1. General</h2>
+
+  <p id="_551b7bc8-4f19-4688-8201-455bc3c6ae95">How do organizations implement security using automation? This is a generalized question from the previous one about security automation, no longer limited to DevOps. DevOps practices generally only helps with infrastructure automation. What should an organization do to fully utilize automation in achievement of security?</p>
+</div>
+        <div id="_definition_4"><h2>8.2. Definition</h2>
+
+  <dl id="_3076aa2b-e358-43b5-9724-b46d165fd4e0"><dt><p>DevSec, security automation</p></dt><dd>
+    <p id="_59e3016b-32fa-41da-b738-15ae1e99f521">The use of automation in place of manual processes for the achievement of information security management.</p>
+  </dd></dl>
+</div>
+        <div id="_implications_3"><h2>8.3. Implications</h2><p id="_fc57e5b9-73bf-4181-9158-0d3a064c1c98">"Security as Code" is not equivalent to security automation because it does not require the "programmatic" ability.</p>
+<table id="_62417251-297f-462c-800e-18430b829a5c" class="example" cellspacing="0" cellpadding="0" style="border-collapse:collapse"><tr><td valign="top" class="example_label" style="width:82.8pt;padding:0pt;margin-left:0pt">EXAMPLE</td><td valign="top" class="example">
+  <p id="_50ff2c36-a11c-4adc-b6a3-1ab1795388dc" class="example">A scripted application of the DOD Security Technical Implementation Guides (STIG) may still have to be run manually during the installation of a server.</p>
+</td></tr></table>
+<p id="_e97ae62c-1064-4efc-a598-cdd09cf29f92">Examples of security automation:</p>
+<ul id="_a7f688be-f349-446e-a489-a2efb5f88ac2">
+  <li>
+    <p id="_05812c9b-9739-4277-b3e1-9f520a8e0849">Business Continuity</p>
+    <ul id="_a7aa96c9-bc78-43d1-8b9d-fff6c24aad6a">
+  <li>
+    <p id="_448dfbc8-4fcf-4fc1-b068-91f4742c86e6">Automatic business continuity plan testing through Infrastructure as Code (IaC)</p>
+  </li>
+  <li>
+    <p id="_6c72d2c4-1da9-4801-87cf-ecd9615d8676">Continuous backup and restore testing with data masking</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_c7c66014-2323-40d3-a237-698ce6526434">SSL Certificates and Public Key Infrastructure</p>
+    <ul id="_e51c751e-f644-4eab-b710-3c0758843486">
+  <li>
+    <p id="_25e92381-3e8b-49ef-a4a0-200d636397a2">Monitoring and auto renewal of SSL certificates</p>
+  </li>
+  <li>
+    <p id="_f16cbf36-2af9-4043-bfe9-24b3dedb6ac2">Testing of expiry dates of SSL certificates</p>
+  </li>
+  <li>
+    <p id="_0825f69d-603e-4fc0-9162-64889c7c390e">Private and public key rotation</p>
+  </li>
+</ul>
+  </li>
+  <li>
+    <p id="_a110c902-faf3-4671-b6d4-aae2f10c68cf">Identity and Access management</p>
+  </li>
+  <li>
+    <p id="_80f8092a-a6e1-453e-ba61-7cb23baa9e1f">Infrastructure</p>
+    <ul id="_a40d602e-132c-4c26-b690-ee7a9e446b0f">
+  <li>
+    <p id="_25a475b4-21d8-4607-9b82-de9290411163">Vulnerability scanning of servers, VMs, containers, appliances during runtime</p>
+  </li>
+  <li>
+    <p id="_6b3a5b85-e5ab-4cbb-ba59-039f43219505">Anti-virus scan during runtime</p>
+  </li>
+</ul>
+  </li>
+</ul></div>
+      </div>
+      <div id="agile-sec">
+        <h1>9.&#xA0; Agile Security: the new paradigm</h1>
+        <p id="_c99bcf5f-132d-4c4c-a330-ece062230643">Problem: CSO&#x2019;s do not have sufficient number of security staff.</p>
+        <p id="_f8361541-a229-46dd-a36b-73b99ae2b707">Agile Security is a new paradigm for information security management, that emphasizes embodiment of security across organizational roles, reactive to external and internal threats in an agile and dynamic way.<div id="_a5a95283-43de-421c-829d-b7a2f69fc1dc" class="Note"><p><span class="note_label">NOTE</span>&#xA0; Agile Security compares to Agile Software Development, similar to how the traditional ISMS approach compares to the Waterfall mindset.</p></div></p>
+        <p id="_cb4f464b-df36-43df-bdc3-1503bc94b17e">Agile Security is about dynamic information exchange within the organization. Like the immune system of the human body, information is immediately propagated to adjacent, potentially vulnerable functions given detection of a threat. A traditional ISMS approach will require that threat information to be reported back to the higher functions before any response can be made. With Agile Security, the business functions themselves are integrated security functions and can provide an immediate response to block potential impact. A centralized response is important, but should not prohibit an immediate tactical approach.</p>
+        <p id="_7b5dfd80-b468-49ce-9eae-40164101e091">The ISMS approach is about adopting best practices. However, often best practices that work in larger organizations do not work with smaller ones, and create an unnecessary burden for the smaller organizations, which takes away precious time and effort from daily work and hence negatively affects their security stances.</p>
+        <p id="_f40d774a-02bd-4039-bc5c-dd114a0fb6e2">Agile Security solves the security skill shortage paradox by promoting the idea of "hybrid-domain-security-experts".</p>
+        <ul id="_40c5b717-c67c-4459-b84c-70bd6a5d80f4">
+  <li>
+    <p id="_33b118d7-1aa2-4f21-aa61-87e3a2a7f4c0">Risks are delegated</p>
+  </li>
+  <li>
+    <p id="_15b48c9d-9327-4132-9266-9c48ac91e2ed">Security responsibilities are delegated</p>
+  </li>
+</ul>
+        <p id="_a8dc7ffe-c978-453f-a282-a72abfc36ac1">A "commitment" of top leadership (as in ISMS) is not enough. Top leadership must understand the nature of security and is committed to integrating security into each and every aspect of the organization. Top leadership must fully understand the risks and threats the organization faces (its risk profile) with regards to security, and set clear bounds and requirements for personnel to adhere to.</p>
+        <p id="_7e5b9e1d-80b4-4ca4-bd8f-a3e47a274494">Humans, it is often said, are the weakest link in security. Phishing, social engineering are all techniques to trick an unsuspecting individual to voluntarily compromise security of an organization. Without full participation (not just "awareness") of all involved people, security cannot be achieved.</p>
+      </div>
+      <div id="agile-pillars">
+        <h1>10.&#xA0; Six pillars of Agile Security</h1>
+        <div id="_collectively_responsible"><h2>10.1. Collectively responsible</h2>
+
+  <p id="_6f7a4ef8-3df9-4bba-bda3-1c53d6d40da9">Everyone is responsible towards the security stance of the organization. The CSO plays a leadership and shepherding role for information security within an organization, but each person has their own security responsibility, and they must be aware of their own contribution (and potential problems) towards the organization&#x2019;s security stance. Edge users are not just "security-aware", but are the first line of defence.</p>
+</div>
+        <div id="_collaborate"><h2>10.2. Collaborate</h2>
+
+  <p id="_b8644a0f-afdb-46bd-8f27-2fdc5e4fd7e1">Security can only be achieved through collaboration, not confrontation. A security aware and collaborative culture is necessary for the foot soldiers to report potential anomalies. The human factor is often the weakest link and remember that most security incidents are caused by simple human error.</p>
+</div>
+        <div id="_pragmatic"><h2>10.3. Pragmatic</h2><p id="_e44606e9-44f7-4aa2-9812-498fc657b972">Security should provide value, not hindrance. For every security initiative or adopted security control, a cost-benefit should be considered to allow transparency on the value of security. Without this pragmatic approach, it is too easy for persons unaware of the benefits of security to dismiss security practices as mere overhead or unnecessary. This provides the necessary business case to convince stakeholders for security and therefore confidence to execute plans faithfully.</p>
+<p id="_375b1177-0174-4e9f-a1d5-c072ff5c7d34">Traditional ISMS can create overhead, need to balance tailoring to an organization and adoption of best practices. Documentation requirements should be based on clearly thought out value brought to the organization, not a hard requirement.</p></div>
+        <div id="_integrate"><h2>10.4. Integrate</h2>
+
+  <p id="_f5ade29f-1a6a-4ee8-bc91-3dcf57df2fb0">Security must be integrated in every aspect of business. Dedicated security personnel rarely have in-depth domain expertise as your business domain experts, and they are the wrong way of solving the problem no matter how many are hired. The truth is, no one else will know your domain, as well as its risks, as well as yourself. A team of dedicated security experts will most likely be oblivious of your domain-specific security issues. Domain knowledge and security knowledge must be fused and co-exist in every organizational process for effective security management.</p>
+</div>
+        <div id="_automate"><h2>10.5. Automate</h2>
+
+  <p id="_175afe2a-5111-42da-8f13-84537c72e3c8">Automated security practices are the core of optimizing process efficiency. Processes that can be automated should be automated, and those that can&#x2019;t should be transformed. Automation also creates its own set of problems but automated approaches to those problems are often possible. There is a saying in software development: if you do the same thing thrice, it&#x2019;s time to program it, and this applies squarely with Agile Security.</p>
+</div>
+        <div id="_measure"><h2>10.6. Measure</h2>
+
+  <p id="_99913011-553e-43bb-8e4f-9a129ac6db6a">Performance that cannot be measured cannot be improved. Without measurements, there is no understandable evidence whether an information security management is effective. Agile Security is about achieving results, and even as vague as they might be, the results must be measurable for transparency and improvement.</p>
+</div>
+      </div>
+      <div id="_benefits_of_agile_security">
+        <h1>11.&#xA0; Benefits of Agile Security</h1>
+        <ul id="_9b00eb87-4085-4299-8bc9-cc2fc3953d55">
+  <li>
+    <p id="_82565861-9d62-44ca-8d22-cc6d2d3ea032">Resilient: Security no longer relies on a single function, e.g. a single security department. Integration of security practices throughout the organization. Requires deeper involvement of when compared to ISMS processes.</p>
+  </li>
+  <li>
+    <p id="_8708a35d-79de-4aac-a11b-3e126e93f79d">Holistic: Focused on business needs and responding to the actual risk context faced by the organization when compared to traditional information security management, from business goals to operational processes to humans, who often turn out to be the weakest link.</p>
+  </li>
+  <li>
+    <p id="_bed97eba-32c1-4fe7-a375-4155009f4f62">Dynamic: The protection of business goals is performed through integrating security with business processes, often down to the tactical levels. This allowing the organization to react faster and more effectively to threats and incidents.</p>
+  </li>
+  <li>
+    <p id="_065fd64f-2759-44a2-b3d4-e6a089f300ef">Tailored: Prioritized approach to provision stronger protection to core or more vulnerable processes over those less exploitable. The traditional ISMS approach often applies the same set of controls across all processes, leading to inefficient resource allocation.</p>
+  </li>
+  <li>
+    <p id="_e18499ef-0c45-4228-a0e7-0224e6c4ffa8">Human-centric: Security is integrated and internalized as an aspect of everyone&#x2019;s work, and requires mind-share within every employee. It is not an external responsibility enforced or required by a separate, dedicated, security function.</p>
+  </li>
+  <li>
+    <p id="_5e6edeb8-fa47-4ede-8096-3c37d6322088">Maturity of an Agile Security approach can lead to achievement of a formal ISMS given the need.</p>
+  </li>
+</ul>
+      </div>
+      <div id="conclusion">
+        <h1>12.&#xA0; Conclusion</h1>
+        <p id="_2ebd554c-9506-4cc2-adc8-0ff39e3ed6ce">Agile Security provides a set of wide-implicating and easily understandable principles that affect an organization&#x2019;s cybersecurity posture, especially suitable for today&#x2019;s fast-paced and challenging cybersecurity landscape.</p>
+      </div>
+      <br />
+      <div id="_guidelines_for_implementing_agile_security" class="Section3">
+        <h1 class="Annex"><b>Appendix A</b><br />(normative) <br /><b>Guidelines for implementing Agile Security</b></h1>
+        <div id="_approach_a_cross_train"><h2>A.1. Approach A: Cross-train</h2><p id="_1bf2660e-1a46-435c-9683-45e6db7774bd">Form an operational security function by selecting 1 or 2 persons that have an interest or background in security from each team and delegate security related tasks to those individuals. Make these persons a representative of the operational security teams.</p>
+<p id="_10696c43-8769-4bcd-8d38-f5bc4e3fbc9b">The operational security teams know exactly what types of operating systems are used, applications are supported for the business, etc. In some organizations, this collaboration involves embedding IT operations specialists within software development teams, thus forming a cross-functional team. This effort may also be combined with a skills matrix.</p></div>
+        <div id="_approach_b_delegate"><h2>A.2. Approach B: Delegate</h2><p id="_b5d8cd7f-7b18-4cf0-b299-85d1289bbdfe">Delegate risk management, maintenance of BCPs etc. to department heads. Freeing up resources of the dedicated security team so they can focus on the security process management and providing the framework(s). The department heads know exactly what they have in house, what risks there are.</p>
+<p id="_b55cb04b-608c-450d-b4c0-5002fff47b52">DevOps is process neutral. Organizations can use Agile or Scrum. Have security engineers attend daily scrum meetings, make them part of the DevOps team.</p></div>
+      </div>
+      <br />
+      <div id="_what_agile_security_is_not" class="Section3">
+        <h1 class="Annex"><b>Appendix B</b><br />(normative) <br /><b>What Agile Security is not</b></h1>
+        <p id="_18b59462-8c29-43c8-b625-9737938e937b">TODO: Placeholder if we need it.</p>
+      </div>
+      <br />
+      <div>
+        <h1 class="Section3">Bibliography</h1>
+        <p id="ISO27000" class="Biblio">[1]&#xA0; ISO/IEC 27000:2018, <i> Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Information security management systems&#x2009;&#x2014;&#x2009;Overview and vocabulary</i></p>
+        <p id="ISO27002" class="Biblio">[2]&#xA0; ISO/IEC 27002, <i> Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Code of practice for information security controls</i></p>
+        <p id="ISO31000" class="Biblio">[3]&#xA0; ISO 31000, <i> Risk management&#x2009;&#x2014;&#x2009;Guidelines</i></p>
+      </div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: {
+      delimiters: [['(#(', ')#)']]
+    }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
+<script>
+    //TOC generation
+      $('#toc').toc({
+          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'container': 'main', //element to find all selectors in
+          'smoothScrolling': true, //enable or disable smooth scrolling on click
+          'prefix': 'toc', //prefix for anchor tags and class names
+          'onHighlight': function(el) {}, //called when a new section is highlighted 
+          'highlightOnScroll': true, //add class to heading that is currently in focus
+          'highlightOffset': 100, //offset to trigger the next headline
+          'anchorName': function(i, heading, prefix) { //custom function for anchor name
+              return prefix+i;
+          },
+          'headerText': function(i, heading, $heading) { //custom function building the header-item text
+              return $heading.text();
+          },
+      'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+        return $heading[0].tagName.toLowerCase();
+      }
+      });
+      
+  </script>
+
+<script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+/**
+ * AnchorJS - v4.1.0 - 2017-09-20
+ * https://github.com/bryanbraun/anchorjs
+ * Copyright (c) 2017 Bryan Braun; Licensed MIT
+ */
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}}); </script>
+
+  <script>
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script></body>
+</html>
