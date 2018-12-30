@@ -35,7 +35,7 @@ git clone https://github.com/riboseinc/{repo-name}/
 
 === Installing Build Tools
 
-See the https://www.metanorma.com/overview/getting-started/[Metanorma Quick Start Guide]
+See the https://www.metanorma.com/docs/getting-started/[Metanorma Quick Start Guide]
 for more information.
 
 
